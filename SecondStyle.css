@@ -1,0 +1,190 @@
+
+.v2-no-scrollbar-2 {
+  overflow-x: hidden !important;
+}
+.v2-tabs-scroll-container-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;  
+}
+.v2-tabs-scroll-container-2::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+.nav-tabs {
+  flex-wrap: nowrap !important;
+  font-family: "Montserrat", sans-serif;  
+}
+/* Responsive adjustments for card internals */
+@media (max-width: 575.98px) {
+  .v2-meal-card-img-2 {
+    width: 120px !important;
+    height: 170px !important;
+    top: -40px !important;
+    border-radius: 24px !important;
+    font-family: "Montserrat", sans-serif;  
+  }
+  .v2-meal-card-content-2 {
+    margin-top: 90px !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 0.5rem !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    font-family: "Montserrat", sans-serif;  
+  }
+  .v2-meal-card-title-2 {
+    font-size: 1rem !important;
+    font-family: "Montserrat", sans-serif;  
+  }
+  .v2-meal-card-nutrition-2 {
+    gap: 0.25rem !important;
+  }
+  .v2-meal-card-nutrition-2 > div {
+    width: 38px !important;
+    font-size: 12px !important;
+    font-family: "Montserrat", sans-serif;  
+  }
+  .v2-meal-card-priceqty-2 {
+    width: 100% !important;
+    font-size: 14px !important;
+    flex-direction: column !important;
+    gap: 0.25rem !important;
+    align-items: flex-start !important;
+    font-family: "Montserrat", sans-serif;  
+  }
+  .v2-meal-card-btn-2 {
+    font-size: 13px !important;
+    height: 44px !important;
+    font-family: "Montserrat", sans-serif;  
+  }
+}
+
+/* Responsive gap for nav tabs */
+@media (max-width: 575.98px) {
+  .nav-tabs .v2-responsive-gap-2 {
+      gap: 0.5rem !important;
+  }
+}
+@media (min-width: 576px) {
+  .nav-tabs.v2-responsive-gap-2 {
+      gap: 3rem !important; /* same as gap-5 */
+  }
+}
+
+
+@media (max-width: 575.98px) {
+  .nav-tabs .nav-link {
+    font-size: 1.5rem !important;
+    padding-left: 0.5rem !important;
+    font-family: "Montserrat", sans-serif;  
+  }
+  .v2-responsive-gap-2 {
+    gap: 1rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Card image smaller */
+  .v2-meal-card-img-2 {
+    width: 80px !important;
+    height: 110px !important;
+    top: -25px !important;
+    z-index: 2;
+    font-family: "Montserrat", sans-serif;  
+  }
+  .v2-meal-card-content-2 {
+    margin-top: 100px !important; /* Increased to make room for image */
+    padding: 0.3rem !important;
+    font-family: "Montserrat", sans-serif;  
+  }
+  .v2-meal-card-title-2 {
+    font-size: 11px !important;
+    font-family: "Montserrat", sans-serif;        
+  }
+  .v2-meal-card-nutrition-2 > div {
+    font-size: 8px !important;
+    font-family: "Montserrat", sans-serif;  
+  }
+  .v2-meal-card-nutrition-2 .fw-bold {
+    font-size: 9px !important;
+    font-family: "Montserrat", sans-serif;  
+  }
+  .v2-meal-card-priceqty-2 span,
+  .v2-meal-card-priceqty-2 .fw-semibold {
+    font-size: 10px !important;
+    font-family: "Montserrat", sans-serif;  
+  }
+  .v2-meal-card-btn-2 {
+    font-size: 10px !important;
+    height: 32px !important;
+    font-family: "Montserrat", sans-serif;  
+  }
+  .v2-meal-card-btn-2 img {
+    height: 12px !important;
+    margin-right: 3px !important;
+    font-family: "Montserrat", sans-serif;  
+  }
+  /* Card container */
+  .col-6.col-md-4.col-lg-3.mt-5.d-flex.justify-content-center {
+    margin-top: 1.5rem !important; /* Increased gap between rows */
+    padding-left: 0.1rem !important;
+    padding-right: 0.1rem !important;
+    font-family: "Montserrat", sans-serif;  
+  }
+  .position-relative.w-100 {
+    min-height: 200px !important; /* Increased to fit all content */
+    border-radius: 5px !important;
+    background: #fff;
+    z-index: 1;
+    font-family: "Montserrat", sans-serif;  
+  }
+  /* Fix quantity buttons row */
+  .v2-meal-card-priceqty-2 {
+    flex-wrap: nowrap !important;
+    gap: 0.2rem !important;
+    align-items: center !important;
+    font-family: "Montserrat", sans-serif;  
+  }
+  .v2-meal-card-priceqty-2 .d-flex.align-items-center.gap-2 {
+    flex-wrap: nowrap !important;
+    gap: 0.2rem !important;
+    align-items: center !important;
+    font-family: "Montserrat", sans-serif;  
+  }
+  .v2-meal-card-priceqty-2 button.btn.btn-sm {
+    width: 20px !important;
+    height: 20px !important;
+    font-size: 12px !important;
+    padding: 0 !important;
+    min-width: 0 !important;
+    line-height: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-family: "Montserrat", sans-serif;  
+  }
+  .v2-meal-card-priceqty-2 span.fw-semibold {
+    min-width: 12px !important;
+    text-align: center;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;          
+  }
+}
+
+@media (max-width: 767.98px) {
+  .v2-meal-card-priceqty-2 {
+    margin-bottom: 32px !important; /* or any value you prefer */
+  }
+  .v2-tabs-scroll-container-2 .nav-link {
+    font-size: 14px !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+}

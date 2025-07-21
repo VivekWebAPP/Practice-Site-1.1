@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="HeaderStyle.css" />
+  <link rel="stylesheet" href="NavbarStyle.css" />
+  <link rel="stylesheet" href="FirstComponent.css" />
+  <link rel="stylesheet" href="SecondStyle.css" />
+  <link rel="stylesheet" href="ThirdComponent.css" />
+  <link rel="stylesheet" href="FourthStyle.css" />
+  <link rel="stylesheet" href="FifthStyle.css" />
+  <link rel="stylesheet" href="SixthStyle.css" />
+  <link rel="stylesheet" href="SeventhStyle.css" />
+  <link rel="stylesheet" href="EightStyle.css" />
+  <link rel="stylesheet" href="NinthStyle.css" />
+
+</head>
+
+<body style="overflow-x: hidden">
+  <!-- Header -->
+  <div class="v2-frame--1">
+    <div class="v2-frame-wrapper--1">
+      <!-- Desktop version - visible on large screens only -->
+      <div class="v2-div--1 d-none">
+        <p class="v2-element-OFF-free-shipping--1">
+          <span class="v2-text-wrapper--1" style="font-weight: 700;">40% OFF + Free Shipping.</span>
+          <span class="v2-span--1"> Save Big Today! Code Auto-Applied</span>
+        </p>
+        <a href="#" style="margin-left: 0; text-decoration: none">
+          <div class="v2-text-wrapper-2--1">Sign up now →</div>
+        </a>
+      </div>
+    </div>
+<!-- Mobile marquee version - visible on mobile/tablet only -->
+    <div class="v2-marquee-container d-lg-none">
+      <div class="v2-marquee-text">
+        <span class="v2-text-wrapper--1" style="font-weight: 700;">40% OFF + Free Shipping.</span>. Save Big Today! Code Auto-Applied • <span class="v2-text-wrapper-2--1" style="font-weight: 700;">Sign up
+          now →</span>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white" style="height: 64px; min-height: 64px;">
+    <div class="container-fluid h-100 px-lg-5 d-flex align-items-center justify-content-between">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center mx-auto mx-lg-0" href="#" style="height: 24.00772476196289px; width: 235.99478149414062px;">
+        <img src="assets/group-28051-1.svg" alt="ActivMeals Logo" style="height: 24.00772476196289px; width: 235.99478149414062px; object-fit: contain;">
+      </a>
+      <!-- Hamburger -->
+      <button class="navbar-toggler d-lg-none ms-auto border-0 p-0 bg-transparent" type="button" aria-label="Toggle navigation" style="box-shadow:none;" onclick="document.getElementById('mobileSidebar').classList.add('active')">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Desktop Navbar links -->
+      <div class="collapse navbar-collapse justify-content-end h-100 d-none d-lg-flex" id="mainNavbar">
+        <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
+          <!-- Meals Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="mealsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              MEALS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="mealsDropdown">
+              <li><a class="dropdown-item" href="#">Meal Menu</a></li>
+              <li><a class="dropdown-item" href="#">Meal Package</a></li>
+              <li><a class="dropdown-item" href="#">Let's Eat Packages</a></li>
+              <li><a class="dropdown-item" href="#">Grab And Go</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
+        </ul>
+        <div class="d-lg-flex align-items-center ms-lg-3">
+          <a href="#" class="btn btn-login ms-lg-2 my-2 my-lg-0">LOGIN</a>
+        </div>
+        <!-- Social Icons & Phone (right, only on desktop) -->
+        <div class="d-none d-lg-flex flex-column align-items-end ms-3">
+          <div class="d-flex align-items-end justify-content-end mb-2">
+            <img src="assets/Twitter1.svg" alt="Twitter" width="20.947999954223633px" height="20.947999954223633px"
+              style="margin-right: 8px" />
+            <img src="assets/facebook1.png" alt="Facebook" width="20.947999954223633px" height="20.947999954223633px"
+              style="margin-right: 8px" />
+            <img src="assets/Instagram.png" alt="Instagram" width="20.947999954223633px"
+              height="20.947999954223633px" />
+          </div>
+          <span class="phone-number fw-bold">+1 (559) 500-6699</span>
+        </div>
+      </div>
+      <!-- Mobile Sidebar -->
+      <div id="mobileSidebar" class="mobile-sidebar bg-white d-flex flex-column">
+        <!-- Header with close button -->
+        <div class="mobile-sidebar-header d-flex justify-content-end p-3">
+          <button class="btn-close" aria-label="Close" onclick="document.getElementById('mobileSidebar').classList.remove('active')"></button>
+        </div>
+        
+        <!-- Main navigation content -->
+        <div class="mobile-sidebar-content d-flex flex-column justify-content-center flex-grow-1 px-4">
+          <ul class="navbar-nav flex-column align-items-center text-center">
+            <li class="nav-item dropdown w-100 text-center mb-3">
+              <a class="nav-link dropdown-toggle w-100 text-center" href="#" id="mealsDropdownMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                MEALS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="mealsDropdownMobile">
+                <li><a class="dropdown-item text-center" href="#">Meal Menu</a></li>
+                <li><a class="dropdown-item text-center" href="#">Meal Package</a></li>
+                <li><a class="dropdown-item text-center" href="#">Let's Eat Packages</a></li>
+                <li><a class="dropdown-item text-center" href="#">Grab And Go</a></li>
+              </ul>
+            </li>
+            <li class="nav-item w-100 text-center mb-3"><a class="nav-link w-100 text-center" href="#">ABOUT</a></li>
+            <li class="nav-item w-100 text-center mb-3"><a class="nav-link w-100 text-center" href="#">FAQ</a></li>
+            <li class="nav-item w-100 text-center mb-3"><a class="nav-link w-100 text-center" href="#">CONTACT US</a></li>
+            <li class="nav-item w-100 text-center"><a href="#" class="btn btn-login w-100 d-flex justify-content-center align-items-center">LOGIN</a></li>
+          </ul>
+        </div>
+        
+        <!-- Footer with social icons and phone -->
+        <div class="mobile-sidebar-footer d-flex flex-column align-items-center p-4">
+          <div class="social-icons d-flex align-items-center justify-content-center mb-3">
+            <img src="assets/Twitter1.svg" alt="Twitter" class="me-2">
+            <img src="assets/Facebook.png" alt="Facebook" class="me-2">
+            <img src="assets/Instagram.png" alt="Instagram">
+          </div>
+          <span class="phone-number fw-bold">+1 (559) 500-6699</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- First Component -->
+  <section>
+    <section class="v2-hero-banner-1 d-none d-md-flex justify-content-center align-items-center position-relative"
+        style="min-height: 782px; width: 100vw; overflow: hidden; padding: 0; margin: 0;">
+        <div class="row g-0 w-100 position-relative" style="height: 782px; margin: 0; padding: 0; width: 100vw;">
+            <div class="col-12 p-0 m-0 position-relative" style="padding: 0; margin: 0; width: 100vw;">
+
+                <!-- Desktop Background Image -->
+                <img src="assets/HeroImage.png" class="hero-bg-img position-absolute top-0 start-0 object-fit-cover"
+                    alt="Hero Background" style="z-index: 1; width: 100vw; height: 100%;" />
+
+                <!-- Desktop Letter Vectors -->
+                <div class="hero-vectors position-absolute"
+                    style="top: 308px; left: 150px; width: 403px; height: 232px; z-index: 2;">
+                    <div class="position-relative w-100 h-100" style="left: 140px;">
+                        <!-- Small letters for "JOIN THE" -->
+                        <img src="assets/Small_Weight_J_Letter.png" class="position-absolute"
+                            style="width: 10px; height: 20px; top: 0; left: 281px;" />
+                        <img src="assets/Small_Weight_O_Letter.png" class="position-absolute"
+                            style="width: 19px; height: 20px; top: 0; left: 295px;" />
+                        <img src="assets/Small_Weight_I_Letter.png" class="position-absolute"
+                            style="width: 2px; height: 20px; top: 0; left: 318px;" />
+                        <img src="assets/Small_Weight_N_Letter.png" class="position-absolute"
+                            style="width: 16px; height: 20px; top: 0; left: 326px;" />
+                        <img src="assets/Small_Weight_T_Letter.png" class="position-absolute"
+                            style="width: 16px; height: 20px; top: 0; left: 351px;" />
+                        <img src="assets/Small_Weight_H_Letter.png" class="position-absolute"
+                            style="width: 15px; height: 20px; top: 0; left: 369px;" />
+                        <img src="assets/Small_Weight_E_Letter.png" class="position-absolute"
+                            style="width: 13px; height: 20px; top: 0; left: 390px;" />
+
+                        <!-- GREEN letters -->
+                        <div class="position-absolute"
+                            style="width: 88px; height: 100px; top: 29px; left: 0; background-image: url('assets/Green_G_Letter.png'); background-size: 100% 100%;">
+                        </div>
+                        <img src="assets/Green_R_Letter.png" class="position-absolute"
+                            style="width: 81px; height: 97px; top: 31px; left: 90px;" />
+                        <img src="assets/Green_E_Letter.png" class="position-absolute"
+                            style="width: 71px; height: 97px; top: 31px; left: 174px;" />
+                        <img src="assets/Green_E_Letter.png" class="position-absolute"
+                            style="width: 71px; height: 97px; top: 31px; left: 247px;" />
+                        <img src="assets/Green_N_letter.png" class="position-absolute"
+                            style="width: 84px; height: 97px; top: 31px; left: 320px;" />
+
+                        <!-- TEAM letters -->
+                        <img src="assets/T_Letter.png" class="position-absolute"
+                            style="width: 82px; height: 99px; top: 133px; left: 34px;" />
+                        <img src="assets/E_Letter.png" class="position-absolute"
+                            style="width: 73px; height: 99px; top: 133px; left: 119px;" />
+                        <img src="assets/Leaf_A_Letter.png" class="position-absolute"
+                            style="width: 105px; height: 99px; top: 133px; left: 192px;" />
+                        <img src="assets/M_Letter.png" class="position-absolute"
+                            style="width: 105px; height: 99px; top: 133px; left: 299px;" />
+                    </div>
+                </div>
+
+                <!-- Desktop Eat Healthy Banner -->
+                <div class="position-absolute d-flex align-items-center justify-content-center px-4 py-2"
+                    style="top: 190px; left: 155px; background: #111; z-index: 3;">
+                    <span class="fw-bold"
+                        style="color: #baf700; font-size: 2rem; font-family: 'Montserrat', sans-serif;">EAT HEALTHY,
+                        FEEL HEALTHY</span>
+                </div>
+
+                <!-- Desktop Learn More Button -->
+                <div class="position-relative py-2 mb-3"
+                    style="width: 220px; left: 475px; top: 590px; z-index: 3; margin-bottom: 100px;">
+                    <button class="v2-btn-1 btn-dark w-100 d-flex align-items-center justify-content-center rounded-2"
+                        style="background: #111; white-space: nowrap;">
+                        <span class="fw-bold"
+                            style="color: #baf700; font-size: 16px; font-family: 'Montserrat', sans-serif; white-space: nowrap;">LEARN
+                            MORE</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile View - RIGHT ALIGNED -->
+    <section
+        class="v2-hero-banner-mobile d-flex d-md-none flex-column justify-content-center align-items-end position-relative"
+        style="min-height: 100vh; width: 100vw; overflow: hidden; padding: 20px;">
+        <!-- Mobile Background Image -->
+        <img src="assets/Mobile_View_Hero_Background.png"
+            class="mobile-hero-bg-img position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+            alt="Mobile Hero Background" style="z-index: 1;" />
+
+        <div class="container-fluid position-relative" style="z-index: 2;">
+            <div class="row justify-content-end">
+                <div class="col-11 col-sm-10 text-end">
+
+                    <!-- Mobile Eat Healthy Badge - RIGHT ALIGNED -->
+                    <div class="mobile-badge d-inline-block mb-2 text-end w-100"
+                        style="background: #111; padding: 0px 20px;width: 100%;">
+                        <span class="fw-bold"
+                            style="color: #baf700; font-size: 16px; font-family: 'Montserrat', sans-serif; letter-spacing: 1px; text-align: center;">EAT
+                            HEALTHY, FEEL HEALTHY</span>
+                    </div>
+
+                    <!-- Mobile Join The Text - RIGHT ALIGNED -->
+                    <div class="mobile-join-text mb-1 text-end">
+                        <div class="small-letters-mobile d-flex justify-content-end align-items-center"
+                            style="gap: 3px;">
+                            <img src="assets/Small_Weight_J_Letter.png" style="width: 12px; height: 24px;" />
+                            <img src="assets/Small_Weight_O_Letter.png" style="width: 22px; height: 24px;" />
+                            <span style="width: 8px;height:32px;font-size: 22px; text-align: center;">I</span>
+                            <img src="assets/Small_Weight_N_Letter.png" style="width: 18px; height: 24px;" />
+                            <span style="width: 1px;"></span>
+                            <img src="assets/Small_Weight_T_Letter.png" style="width: 18px; height: 24px;" />
+                            <img src="assets/Small_Weight_H_Letter.png" style="width: 16px; height: 24px;" />
+                            <img src="assets/Small_Weight_E_Letter.png" style="width: 14px; height: 24px;" />
+                        </div>
+                    </div>
+
+                    <!-- Mobile GREEN Letters - RIGHT ALIGNED -->
+                    <div class="mobile-green-letters d-flex justify-content-end align-items-center"
+                        style="gap: 3px;">
+                        <div
+                            style="width: 66px; height: 75px; background-image: url('assets/Green_G_Letter.png'); background-size: 100% 100%;">
+                        </div>
+                        <img src="assets/Green_R_Letter.png" style="width: 60px; height: 72px;" />
+                        <img src="assets/Green_E_Letter.png" style="width: 53px; height: 72px;" />
+                        <img src="assets/Green_E_Letter.png" style="width: 53px; height: 72px;" />
+                        <img src="assets/Green_N_letter.png" style="width: 63px; height: 72px;" />
+                    </div>
+
+                    <!-- Mobile TEAM Letters - RIGHT ALIGNED -->
+                    <div class="mobile-team-letters d-flex justify-content-end align-items-center mb-2"
+                        style="gap: 3px;">
+                        <img src="assets/T_Letter.png" style="width: 62px; height: 74px;" />
+                        <img src="assets/E_Letter.png" style="width: 54px; height: 74px;" />
+                        <img src="assets/Leaf_A_Letter.png" style="width: 78px; height: 74px;" />
+                        <img src="assets/M_Letter.png" style="width: 78px; height: 74px;" />
+                    </div>
+
+                    <!-- Mobile Learn More Button - RIGHT ALIGNED -->
+                    <div class="mobile-learn-btn text-end mt-5">
+                        <button class="btn mobile-btn"
+                            style="background: #111; color: #baf700; border: none; padding: 15px 35px; border-radius: 4px; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 18px;">
+                            LEARN MORE
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </section>
+  <!-- Second Component -->
+  <div class="container-fluid py-5 px-5 my-5">
+    <!-- Header -->
+    <div class="text-center mb-2">
+      <p class="mb-2 fs-5 fw-normal" style="font-family: Montserrat">
+        Balance your busy schedules with healthy
+      </p>
+      <div class="d-inline-block px-3 py-1 bg-dark rounded">
+        <span class="fw-bold fs-2" style="color: #baf700; font-family: Montserrat">ACTIVMEALS</span>
+      </div>
+    </div>
+    <div class="text-center mb-5 mt-3">
+      <span class="text-danger fw-semibold" style="font-size: 1rem; font-family: Montserrat">*ORDER BY FRIDAY,
+        9AM</span>
+    </div>
+
+    <!-- Tabs -->
+    <div class="v2-tabs-scroll-container-2">
+      <ul class="nav nav-tabs border-0 responsive-gap gap-2 gap-md-5 mb-lg-5 overflow-y-hidden" style="white-space: nowrap; min-width: auto; overflow-x: auto; overflow-y: hidden;">
+        <li class="nav-item">
+          <a class="nav-link active fw-bold fs-5 fs-md-4 border-0 border-bottom border-4 border-dark text-nowrap"
+            style="background-color: transparent; font-family: Montserrat">Meal Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5 fs-md-4 text-dark border-0 text-nowrap" href="#"
+            style="font-family: Montserrat; font-weight: 400">Meal Packages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5 fs-md-4 text-dark border-0 text-nowrap" href="#"
+            style="font-family: Montserrat; font-weight: 400">Let's Eat Meals</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Cards -->
+    <div class="row g-4 justify-content-center align-items-center align-content-center mt-5">
+      <!-- Card 1 -->
+      <div class="col-6 col-md-4 col-lg-3 mt-5 d-flex justify-content-center">
+        <div class="d-flex flex-column align-items-center w-100 p-2 p-lg-2">
+          <div class="position-relative w-100" style="
+                background: #fff;
+                border-radius: 8px;
+                min-height: 374px;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+              ">
+            <!-- Food Image (overlapping top) -->
+            <img src="./assets/food1.png" alt="Blackened Chicken"
+              class="position-absolute start-50 translate-middle-x v2-meal-card-img-2" style="
+                  top: -60px;
+                  width: 172px;
+                  height: 252px;
+                  object-fit: contain;
+                  background: transparent !important;
+                  border-radius: 32px;
+                " />
+            <!-- Card Content -->
+            <div class="pt-5 px-3 pb-0 v2-meal-card-content-2" style="margin-top: 150px">
+              <div class="fw-bold text-uppercase text-center v2-meal-card-title-2" style="
+                    font-size: 18px;
+                    margin-bottom: 8px;
+                    font-family: Montserrat;
+                  ">
+                BLACKENED CHICKEN
+              </div>
+              <!-- Nutrition Row -->
+              <div class="d-flex justify-content-between align-items-center mb-3 px-1 v2-meal-card-nutrition-2"
+                style="gap: 0.25rem">
+                <div class="text-center" style="width: 40px">
+                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
+                    400
+                  </div>
+                  <div style="font-size: 8px; font-family: Montserrat">
+                    Kcal
+                  </div>
+                </div>
+                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
+                <div class="text-center" style="width: 40px">
+                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
+                    42g
+                  </div>
+                  <div style="font-size: 8px; font-family: Montserrat">
+                    Carbs
+                  </div>
+                </div>
+                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
+                <div class="text-center" style="width: 40px">
+                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
+                    46g
+                  </div>
+                  <div style="font-size: 8px; font-family: Montserrat">
+                    Protein
+                  </div>
+                </div>
+                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
+                <div class="text-center" style="width: 40px">
+                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
+                    6g
+                  </div>
+                  <div style="font-size: 8px; font-family: Montserrat">
+                    Fat
+                  </div>
+                </div>
+              </div>
+              <!-- Price and Quantity -->
+              <div class="d-flex justify-content-between align-items-center mb-2 v2-meal-card-priceqty-2"
+                style="width: 100%; margin: auto">
+                <span class="fw-bold" style="
+                      font-size: 16px;
+                      font-family: Montserrat;
+                      margin-bottom: 20px;
+                    ">$11.50</span>
+                <div class="d-flex align-items-center gap-1" style="margin-bottom: 20px">
+                  <button class="btn btn-sm" style="
+                        background: #d9d9d9;
+                        border-radius: 50%;
+                        width: 28px;
+                        height: 28px;
+                        padding: 0;
+                      ">
+                    -
+                  </button>
+                  <span class="fw-semibold" style="font-size: 16px; font-family: Montserrat">1</span>
+                  <button class="btn btn-sm" style="
+                        background: #d9d9d9;
+                        border-radius: 50%;
+                        width: 28px;
+                        height: 28px;
+                        padding: 0;
+                      ">
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Add to Cart Button -->
+            <button class="w-100 fw-bold d-flex align-items-center justify-content-center v2-meal-card-btn-2" style="
+                  background: #baf700;
+                  color: #111;
+                  border-radius: 0 0 8px 8px;
+                  height: 51px;
+                  font-size: 14px;
+                  border: none;
+                  position: absolute;
+                  left: 0;
+                  bottom: 0;
+                ">
+              <img src="./assets/Group 28318.png" alt="cart" style="
+                    height: 19px;
+                    margin-right: 8px;
+                    font-family: Montserrat;
+                  " />
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-6 col-md-4 col-lg-3 mt-5 d-flex justify-content-center">
+        <div class="d-flex flex-column align-items-center w-100 p-2 p-lg-2">
+          <div class="position-relative w-100" style="
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+                min-height: 374px;
+              ">
+            <!-- Food Image (overlapping top) -->
+            <img src="./assets/FirstPageFood1.png" alt="Chicken Parmigiana"
+              class="position-absolute start-50 translate-middle-x v2-meal-card-img-2" style="
+                  top: -60px;
+                  width: 172px;
+                  height: 252px;
+                  object-fit: cover;
+                  background-color: transparent;
+                  border-radius: 50px;
+                " />
+            <!-- Card Content -->
+            <div class="pt-5 pb-0 px-3 v2-meal-card-content-2" style="margin-top: 150px">
+              <div class="fw-bold text-uppercase text-center v2-meal-card-title-2" style="
+                    font-size: 18px;
+                    margin-bottom: 8px;
+                    font-family: Montserrat;
+                  ">
+                CHICKEN PARMIGIANA
+              </div>
+              <!-- Nutrition Row -->
+              <div class="d-flex justify-content-between align-items-center mb-3 px-1 v2-meal-card-nutrition-2"
+                style="gap: 0.25rem">
+                <div class="text-center" style="width: 40px">
+                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
+                    400
+                  </div>
+                  <div style="font-size: 8px; font-family: Montserrat">
+                    Kcal
+                  </div>
+                </div>
+                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
+                <div class="text-center" style="width: 40px">
+                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
+                    42g
+                  </div>
+                  <div style="font-size: 8px; font-family: Montserrat">
+                    Carbs
+                  </div>
+                </div>
+                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
+                <div class="text-center" style="width: 40px">
+                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
+                    46g
+                  </div>
+                  <div style="font-size: 8px; font-family: Montserrat">
+                    Protein
+                  </div>
+                </div>
+                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
+                <div class="text-center" style="width: 40px">
+                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
+                    6g
+                  </div>
+                  <div style="font-size: 8px; font-family: Montserrat">
+                    Fat
+                  </div>
+                </div>
+              </div>
+              <!-- Price and Quantity -->
+              <div class="d-flex justify-content-between align-items-center mb-2 v2-meal-card-priceqty-2"
+                style="width: 100%; margin: auto">
+                <span class="fw-bold" style="
+                      font-size: 16px;
+                      font-family: Montserrat;
+                      margin-bottom: 20px;
+                    ">$70.00</span>
+                <div class="d-flex align-items-center gap-1" style="margin-bottom: 20px">
+                  <button class="btn btn-sm" style="
+                        background: #d9d9d9;
+                        border-radius: 50%;
+                        width: 28px;
+                        height: 28px;
+                        padding: 0;
+                      ">
+                    -
+                  </button>
+                  <span class="fw-semibold" style="font-size: 16px; font-family: Montserrat">1</span>
+                  <button class="btn btn-sm" style="
+                        background: #d9d9d9;
+                        border-radius: 50%;
+                        width: 28px;
+                        height: 28px;
+                        padding: 0;
+                      ">
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Add to Cart Button -->
+            <button class="w-100 fw-bold d-flex align-items-center justify-content-center v2-meal-card-btn-2" style="
+                  background: #baf700;
+                  color: #111;
+                  border-radius: 0 0 8px 8px;
+                  height: 51px;
+                  font-size: 14px;
+                  border: none;
+                  position: absolute;
+                  left: 0;
+                  bottom: 0;
+                ">
+              <img src="./assets/Group 28318.png" alt="cart" style="
+                    height: 19px;
+                    margin-right: 8px;
+                    font-family: Montserrat;
+                  " />
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-6 col-md-4 col-lg-3 mt-5 d-flex justify-content-center">
+        <div class="d-flex flex-column align-items-center w-100 p-2 p-lg-2">
+          <div class="position-relative w-100" style="
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+                min-height: 374px;
+              ">
+            <!-- Food Image (overlapping top) -->
+            <img src="./assets/food3.png" alt="Korean Beef"
+              class="position-absolute start-50 translate-middle-x v2-meal-card-img-2" style="
+                  top: -60px;
+                  width: 172px;
+                  height: 252px;
+                  object-fit: cover;
+                  background-color: transparent;
+                  border-radius: 50px;
+                " />
+            <!-- Card Content -->
+            <div class="pt-5 pb-0 px-3 v2-meal-card-content-2" style="margin-top: 150px">
+              <div class="fw-bold text-uppercase text-center v2-meal-card-title-2" style="
+                    font-size: 18px;
+                    margin-bottom: 8px;
+                    font-family: Montserrat;
+                  ">
+                KOREAN BEEF
+              </div>
+              <!-- Nutrition Row -->
+              <div class="d-flex justify-content-between align-items-center mb-3 px-1 v2-meal-card-nutrition-2"
+                style="gap: 0.25rem">
+                <div class="text-center" style="width: 40px">
+                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
+                    400
+                  </div>
+                  <div style="font-size: 8px; font-family: Montserrat">
+                    Kcal
+                  </div>
+                </div>
+                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
+                <div class="text-center" style="width: 40px">
+                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
+                    42g
+                  </div>
+                  <div style="font-size: 8px; font-family: Montserrat">
+                    Carbs
+                  </div>
+                </div>
+                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
+                <div class="text-center" style="width: 40px">
+                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
+                    46g
+                  </div>
+                  <div style="font-size: 8px; font-family: Montserrat">
+                    Protein
+                  </div>
+                </div>
+                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
+                <div class="text-center" style="width: 40px">
+                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
+                    6g
+                  </div>
+                  <div style="font-size: 8px; font-family: Montserrat">
+                    Fat
+                  </div>
+                </div>
+              </div>
+              <!-- Price and Quantity -->
+              <div class="d-flex justify-content-between align-items-center mb-2 v2-meal-card-priceqty-2"
+                style="width: 100%; margin: auto">
+                <span class="fw-bold" style="
+                      font-size: 16px;
+                      font-family: Montserrat;
+                      margin-bottom: 20px;
+                    ">$11.50</span>
+                <div class="d-flex align-items-center gap-1" style="margin-bottom: 20px">
+                  <button class="btn btn-sm" style="
+                        background: #d9d9d9;
+                        border-radius: 50%;
+                        width: 28px;
+                        height: 28px;
+                        padding: 0;
+                      ">
+                    -
+                  </button>
+                  <span class="fw-semibold" style="font-size: 16px; font-family: Montserrat">1</span>
+                  <button class="btn btn-sm" style="
+                        background: #d9d9d9;
+                        border-radius: 50%;
+                        width: 28px;
+                        height: 28px;
+                        padding: 0;
+                      ">
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Add to Cart Button -->
+            <button class="w-100 fw-bold d-flex align-items-center justify-content-center v2-meal-card-btn-2" style="
+                  background: #baf700;
+                  color: #111;
+                  border-radius: 0 0 8px 8px;
+                  height: 51px;
+                  font-size: 14px;
+                  border: none;
+                  position: absolute;
+                  left: 0;
+                  bottom: 0;
+                ">
+              <img src="./assets/Group 28318.png" alt="cart" style="
+                    height: 19px;
+                    margin-right: 8px;
+                    font-family: Montserrat;
+                  " />
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-6 col-md-4 col-lg-3 mt-5 d-flex justify-content-center">
+        <div class="d-flex flex-column align-items-center w-100 p-2 p-lg-2">
+          <div class="position-relative w-100" style="
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+                min-height: 374px;
+              ">
+            <!-- Food Image (overlapping top) -->
+            <img src="./assets/food4.png" alt="Protein Pancake"
+              class="position-absolute start-50 translate-middle-x v2-meal-card-img-2" style="
+                  top: -60px;
+                  width: 172px;
+                  height: 252px;
+                  object-fit: cover;
+                  background-color: transparent;
+                  border-radius: 50px;
+                " />
+            <!-- Card Content -->
+            <div class="pt-5 pb-0 px-3 v2-meal-card-content-2" style="margin-top: 150px">
+              <div class="fw-bold text-uppercase text-center v2-meal-card-title-2" style="
+                    font-size: 18px;
+                    margin-bottom: 8px;
+                    font-family: Montserrat;
+                  ">
+                PROTEIN PANCAKE
+              </div>
+              <!-- Nutrition Row -->
+              <div class="d-flex justify-content-between align-items-center mb-3 px-1 v2-meal-card-nutrition-2"
+                style="gap: 0.25rem">
+                <div class="text-center" style="width: 40px">
+                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
+                    400
+                  </div>
+                  <div style="font-size: 8px; font-family: Montserrat">
+                    Kcal
+                  </div>
+                </div>
+                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
+                <div class="text-center" style="width: 40px">
+                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
+                    42g
+                  </div>
+                  <div style="font-size: 8px; font-family: Montserrat">
+                    Carbs
+                  </div>
+                </div>
+                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
+                <div class="text-center" style="width: 40px">
+                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
+                    46g
+                  </div>
+                  <div style="font-size: 8px; font-family: Montserrat">
+                    Protein
+                  </div>
+                </div>
+                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
+                <div class="text-center" style="width: 40px">
+                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
+                    6g
+                  </div>
+                  <div style="font-size: 8px; font-family: Montserrat">
+                    Fat
+                  </div>
+                </div>
+              </div>
+              <!-- Price and Quantity -->
+              <div class="d-flex justify-content-between align-items-center mb-2 v2-meal-card-priceqty-2"
+                style="width: 100%; margin: auto">
+                <span class="fw-bold" style="
+                      font-size: 16px;
+                      font-family: Montserrat;
+                      margin-bottom: 20px;
+                    ">$11.50</span>
+                <div class="d-flex align-items-center gap-1" style="margin-bottom: 20px">
+                  <button class="btn btn-sm" style="
+                        background: #d9d9d9;
+                        border-radius: 50%;
+                        width: 28px;
+                        height: 28px;
+                        padding: 0;
+                      ">
+                    -
+                  </button>
+                  <span class="fw-semibold" style="font-size: 16px; font-family: Montserrat">1</span>
+                  <button class="btn btn-sm" style="
+                        background: #d9d9d9;
+                        border-radius: 50%;
+                        width: 28px;
+                        height: 28px;
+                        padding: 0;
+                      ">
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Add to Cart Button -->
+            <button class="w-100 fw-bold d-flex align-items-center justify-content-center v2-meal-card-btn-2" style="
+                  background: #baf700;
+                  color: #111;
+                  border-radius: 0 0 8px 8px;
+                  height: 51px;
+                  font-size: 14px;
+                  border: none;
+                  position: absolute;
+                  left: 0;
+                  bottom: 0;
+                ">
+              <img src="./assets/Group 28318.png" alt="cart" style="height: 19px; margin-right: 8px" />
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- View All Meals Button -->
+    <div class="text-center mt-5 mb-2">
+      <button class="btn btn-dark btn-lg px-5 py-3 fw-bold" style="
+            background: #111;
+            color: #baf700;
+            font-size: 16px;
+            font-family: Montserrat;
+          ">
+        VIEW ALL MEALS
+      </button>
+    </div>
+  </div>
+  <!-- Third Component -->
+  <section class="standards-section py-5 my-5">
+    <div class="d-flex flex-column justify-content-center gap-5 container">
+      <div class="text-center mb-md-2 mb-sm-2 py-4">
+        <p class="standards-subtitle mb-2" style="font-size: 20px; font-weight: 500; font-family: Montserrat">
+          Our food is made with
+        </p>
+        <span class="standards-title px-3 py-1 d-inline-block">HIGHEST STANDARDS</span>
+      </div>
+      <div class="row g-4 justify-content-center mt-md-2 mb-lg-4">
+        <!-- 1 -->
+        <div class="col-4 col-sm-4 col-md-3 col-lg-2 text-center">
+          <div class="circle-icon mx-auto mb-2">
+            <img src="./assets/microwave-oven 1.png" alt="Baked" class="icon-img" />
+          </div>
+          <div class="icon-label" style="font-family: Montserrat">Baked</div>
+        </div>
+        <!-- 2 -->
+        <div class="col-4 col-sm-4 col-md-3 col-lg-2 text-center">
+          <div class="circle-icon mx-auto mb-2">
+            <img src="./assets/Vector18.png" alt="Boiled" class="icon-img" />
+          </div>
+          <div class="icon-label" style="font-family: Montserrat">Boiled</div>
+        </div>
+        <!-- 3 -->
+        <div class="col-4 col-sm-4 col-md-3 col-lg-2 text-center">
+          <div class="circle-icon mx-auto mb-2">
+            <img src="./assets/grill 1.png" alt="Grilled" class="icon-img" />
+          </div>
+          <div class="icon-label" style="font-family: Montserrat">
+            Grilled
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="col-4 col-sm-4 col-md-3 col-lg-2 text-center">
+          <div class="circle-icon mx-auto mb-2">
+            <img src="./assets/muscle 1.png" alt="High Protein" class="icon-img" />
+          </div>
+          <div class="icon-label" style="font-family: Montserrat">
+            High Protein
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="col-4 col-sm-4 col-md-3 col-lg-2 text-center">
+          <div class="circle-icon mx-auto mb-2">
+            <img src="./assets/calories 1.png" alt="Low Calorie" class="icon-img" />
+          </div>
+          <div class="icon-label" style="font-family: Montserrat">
+            Low Calorie
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="col-4 col-sm-4 col-md-3 col-lg-2 text-center">
+          <div class="circle-icon mx-auto mb-2">
+            <img src="./assets/no-french-fries 1.png" alt="No Fried Foods" class="icon-img" />
+          </div>
+          <div class="icon-label" style="font-family: Montserrat">
+            No Fried Foods
+          </div>
+        </div>
+        <!-- 7 -->
+        <div class="col-4 col-sm-4 col-md-3 col-lg-2 text-center">
+          <div class="circle-icon mx-auto mb-2">
+            <img src="./assets/Group 28078.png" alt="Minimally Processed" class="icon-img" />
+          </div>
+          <div class="icon-label" style="font-family: Montserrat">
+            Minimally Processed
+          </div>
+        </div>
+        <!-- 8 -->
+        <div class="col-4 col-sm-4 col-md-3 col-lg-2 text-center">
+          <div class="circle-icon mx-auto mb-2">
+            <img src="./assets/Group 28081.png" alt="No Seed Oils" class="icon-img" />
+          </div>
+          <div class="icon-label" style="font-family: Montserrat">
+            No Seed Oils
+          </div>
+        </div>
+        <!-- 9 -->
+        <div class="col-4 col-sm-4 col-md-3 col-lg-2 text-center">
+          <div class="circle-icon mx-auto mb-2">
+            <img src="./assets/Group 28087.png" alt="Clean Ingredients" class="icon-img" />
+          </div>
+          <div class="icon-label" style="font-family: Montserrat">
+            Clean Ingredients
+          </div>
+        </div>
+        <!-- 10 -->
+        <div class="col-4 col-sm-4 col-md-3 col-lg-2 text-center">
+          <div class="circle-icon mx-auto mb-2">
+            <img src="./assets/no-fat 1.png" alt="Low To Medium Fat" class="icon-img" />
+          </div>
+          <div class="icon-label" style="font-family: Montserrat">
+            Low To Medium Fat
+          </div>
+        </div>
+        <!-- 11 -->
+        <div class="col-4 col-sm-4 col-md-3 col-lg-2 text-center">
+          <div class="circle-icon mx-auto mb-2">
+            <img src="./assets/Vector20.png" alt="Complex Carbs" class="icon-img" />
+          </div>
+          <div class="icon-label" style="font-family: Montserrat">
+            Complex Carbs
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fourth Component -->
+  <div class="container-fluid py-5 px-5 my-5">
+    <div class="text-center mb-5">
+      <div class="mb-2" style="
+            font-size: 20px;
+            color: #222;
+            font-weight: 400;
+            font-family: Montserrat;
+          ">
+        Explore
+      </div>
+      <div class="highlighted-title">OUR COLLECTIONS</div>
+    </div>
+    <div class="row justify-content-center g-4 mt-4 mb-4">
+      <div class="col-12 col-sm-6 col-lg-3 d-flex">
+        <div class="collection-card flex-fill">
+          <img src="./assets/socials4 4.png" alt="Breakfast" class="collection-img" />
+          <div class="card-label">BREAKFAST</div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 d-flex">
+        <div class="collection-card flex-fill">
+          <img src="./assets/socials3.png" alt="Lunch/Dinner" class="collection-img" />
+          <div class="card-label">LUNCH/DINNER</div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 d-flex">
+        <div class="collection-card flex-fill">
+          <img src="./assets/socials2.png" alt="A La Carte" class="collection-img" />
+          <div class="card-label">A LA CARTE</div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 d-flex">
+        <div class="collection-card flex-fill">
+          <img src="./assets/Social4.png" alt="Snacks/Dinner" class="collection-img" />
+          <div class="card-label">SNACKS/DINNER</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fifth Component -->
+  <section class="how-it-works-section py-5">
+    <div class="how-it-works-left">
+      <div class="how-it-works-overlay">
+        <!-- Subtitle -->
+        <div class="mb-2 how-it-works-desc">
+          Easy. Nutritious. Convenient. Delicious.
+        </div>
+        <!-- Highlighted Title -->
+        <div class="how-it-works-label mb-4">HOW IT WORKS</div>
+        <div class="container-fluid px-0">
+          <!-- Steps in 2x2 Grid -->
+          <div class="row gy-5 gx-5 mt-2">
+            <!-- Step 1 -->
+            <div class="col-12 col-md-6">
+              <div class="how-step d-flex flex-column align-items-center">
+                <div class="how-step-row d-flex align-items-center">
+                  <div class="step-icon">
+                    <img src="./assets/fifthComponent1image.png" alt="Choose" style="width: 48px; height: 48px" />
+                  </div>
+                  <span class="step-number">01</span>
+                </div>
+                <div class="how-step-text">
+                  <h3 class="step-title">You choose what you like</h3>
+                  <p class="step-text">
+                    We will hand pick all ingredients from trusted suppliers
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Step 2 -->
+            <div class="col-12 col-md-6">
+              <div class="how-step d-flex flex-column align-items-start">
+                <div class="how-step-row d-flex align-items-center">
+                  <div class="step-icon">
+                    <img src="./assets/cooking 1.png" alt="Cooked" style="width: 48px; height: 48px" />
+                  </div>
+                  <span class="step-number">02</span>
+                </div>
+                <div class="how-step-text">
+                  <h3 class="step-title">Meal is cooked</h3>
+                  <p class="step-text">
+                    We cook tasty & nutritious meal with seasoned ingredients
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row gy-5 gx-5 mt-2">
+            <!-- Step 3 -->
+            <div class="col-12 col-md-6">
+              <div class="how-step d-flex flex-column align-items-start">
+                <div class="how-step-row d-flex align-items-center">
+                  <div class="step-icon">
+                    <img src="./assets/fast-delivery (2) 1.png" alt="Delivered" style="width: 48px; height: 48px" />
+                  </div>
+                  <span class="step-number">03</span>
+                </div>
+                <div class="how-step-text">
+                  <h3 class="step-title">Meal is delivered</h3>
+                  <p class="step-text">
+                    Meals are ready for pickup or delivery on Sundays
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Step 4 -->
+            <div class="col-12 col-md-6">
+              <div class="how-step d-flex flex-column align-items-start">
+                <div class="how-step-row d-flex align-items-center">
+                  <div class="step-icon">
+                    <img src="./assets/salad (1) 1.png" alt="Enjoy" style="width: 48px; height: 48px" />
+                  </div>
+                  <span class="step-number">04</span>
+                </div>
+                <div class="how-step-text">
+                  <h3 class="step-title">Enjoy your meal</h3>
+                  <p class="step-text">
+                    Meal with low sodium & no added preservatives is fed
+                    throughout the week.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Order Button and Note -->
+          <div class="mt-5">
+            <button class="how-it-works-btn d-flex align-items-center mb-2">
+              <img src="./assets/OrderNow.png" alt="arrow-right"
+                style="width: 20px; height: 30px; margin-right: 10px" />
+              ORDER NOW!
+            </button>
+            <div class="how-it-works-note mt-2">*ORDER BY FRIDAY, 9AM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Sixth Component -->
+  <section class="healthy-meals-section py-5">
+    <div class="container-fluid px-2 py-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-xxl-11">
+          <!-- Main Title -->
+          <div class="text-center mb-5">
+            <h1 class="section-title">GET YOUR HEALTHY MEALS</h1>
+          </div>
+
+          <!-- Main Content Grid -->
+          <div class="row g-4 g-lg-5">
+            <!-- Left Content Column -->
+            <div class="col-12 col-lg-6">
+              <!-- Meal Ordering Card -->
+              <div class="meal-card d-flex flex-column flex-sm-row align-items-start mb-4">
+                <div class="meal-card-image mb-3 mb-sm-0 me-sm-4">
+                  <img src="./assets/group-28200-1.svg" alt="Food ordering app" class="img-fluid meal-phone-img" />
+                </div>
+                <div class="meal-card-content flex-grow-1 mt-lg-4">
+                  <h3 class="card-heading mt-lg-3">Enjoy your meal</h3>
+                  <p class="card-text mb-lg-4">
+                    Place your order online by <strong>Friday 9am</strong> and
+                    meals will be ready for pickup on Sunday. We follow this
+                    in order to get all fresh ingredients into the kitchen.
+                  </p>
+                  <button class="btn-order d-flex align-items-center justify-content-center mt-lg-4">
+                    <div class="btn-icon me-2">
+                      <div class="icon-lock"></div>
+                      <div class="icon-handle"></div>
+                    </div>
+                    <span class="btn-text">ORDER ONLINE</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Grab n Go Section -->
+              <div class="grab-go-section d-flex flex-column flex-sm-row align-items-center">
+                <div class="grab-go-content flex-grow-1 mb-3 mb-sm-0">
+                  <h3 class="grab-go-heading">Grab n Go</h3>
+                  <p class="grab-go-text">
+                    We stock our fridge at the locations and you are welcome
+                    to swing in and purchase Grab n' Go meals during our hours
+                    of operation.
+                  </p>
+                </div>
+                <div class="grab-go-image ms-sm-4">
+                  <img src="./assets/group-28148-1.svg" alt="Grab and go meals" class="img-fluid fridge-img" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Content Column -->
+            <div class="col-12 col-lg-6">
+              <div class="delivery-section text-center text-lg-end">
+                <div class="delivery-content">
+                  <div class="delivery-badge mb-3">
+                    <img src="./assets/group-28119.svg" alt="Home delivery service" class="img-fluid delivery-map" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Seventh Component -->
+  <section>
+    <div class="v2-frame-7">
+      <div class="v2-div-7">
+        <div class="v2-group-7">
+          <div class="v2-harvest-7"></div>
+          <div class="v2-TRUSTED-SUPPLIERS-7" style="font-family: Montserrat">
+            TRUSTED<br />SUPPLIERS
+          </div>
+        </div>
+        <div class="v2-group-2-7">
+          <div class="v2-rice-7"></div>
+          <div class="v2-TASTY-NUTRITIOUS-7" style="font-family: Montserrat">
+            TASTY &amp;<br />NUTRITIOUS
+          </div>
+        </div>
+        <div class="v2-div-2-7">
+          <div class="v2-no-preservatives-7"></div>
+          <div class="v2-NO-ADDED-7" style="font-family: Montserrat">
+            NO ADDED<br />PRESERVATIVES
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Eight Component -->
+  <div class="v2-hero-flex-8 d-flex flex-row position-relative w-100">
+    <!-- Left: Image -->
+    <div class="v2-hero-img-col-8 flex-grow-1">
+      <img src="./assets/card2-1.png" alt="Green Team Card" class="v2-hero-bg-img-8 img-fluid w-100 h-100 d-block" />
+    </div>
+    <!-- Right: Overlay Card -->
+    <div class="v2-right-panel-custom-8 d-flex flex-column justify-content-center px-4 py-5">
+      <h2 class="fw-bold mb-3 mt-5 py-2" style="
+            color: #111;
+            font-family: Montserrat, sans-serif;
+            font-size: 2rem;
+            line-height: 1.1;
+          ">
+        EAT MORE,<br />SPEND LESS
+      </h2>
+      <p class="mb-4" style="
+            color: #111;
+            font-family: Montserrat, sans-serif;
+            font-size: 1.1rem;
+            width: 70%;
+          ">
+        Swing in &amp; purchase Grab n Go meals and drinks from our stores
+        conveniently, using our meal cards.
+      </p>
+      <button class="btn v2-custom-order-btn-8 d-flex align-items-center gap-2 mb-4" type="button">
+        <img src="./assets/group-28061.svg" alt="Order Icon" style="height: 32px" />
+        <span class="fw-bold" style="color: #baf700; font-family: Montserrat">ORDER NOW!</span>
+      </button>
+      <div style="margin-top: 200px">
+        <span class="small" style="
+              color: #66080b;
+              font-size: 1rem;
+              font-family: Montserrat;
+              font-weight: 600;
+            ">*ORDER BY FRIDAY, 9AM</span>
+      </div>
+    </div>
+  </div>
+  <!-- Ninth Component -->
+  <div class="v2-frame-9 py-5">
+    <div class="v2-overlap-wrapper-9">
+      <div class="v2-overlap-9">
+        <div class="v2-rectangle-9"></div>
+        <!-- Mobile-visible testimonial title (always visible on mobile) -->
+        <div class="d-flex flex-column justify-content-center align-items-center d-md-none text-center py-3" style="background: #fff; z-index: 100; position: relative;">
+          <div style="font-family: Montserrat; font-size: 0.9rem; letter-spacing: 1px; color: #111;">Testimonials</div>
+          <div class="fw-bold" style="font-family: Montserrat; font-size: 1.1rem; color: #baf700; background-color: #111; padding: 5px; width: 80%; text-align: center;">WHAT OUR CUSTOMERS SAY</div>
+        </div>
+        <div class="v2-div-9 d-none d-md-block">
+          <div class="v2-div-wrapper-9">
+            <div class="v2-text-wrapper-9" style="font-family: Montserrat">
+              Testimonials
+            </div>
+          </div>
+          <div class="v2-what-our-customers-wrapper-9">
+            <div class="v2-what-our-customers-9" style="font-family: Montserrat">
+              WHAT OUR CUSTOMERS SAY
+            </div>
+          </div>
+        </div>
+        <div class="v2-rectangle-2-9"></div>
+        <div class="v2-div-2-9 mx-5" id="testimonialsContainer">
+          <div class="v2-group-9">
+            <div class="v2-overlap-group-9">
+              <img class="v2-union-9" src="./assets/union.svg" />
+              <img class="v2-img-9" src="./assets/union-5.svg" />
+              <div class="v2-text-wrapper-2-9" style="font-family: Montserrat">
+                Innovative!
+              </div>
+              <p class="v2-this-is-a-convenient-9">
+                This is a convenient way to eat quality food that is healthy
+                and fresh.&nbsp;&nbsp;The best part of the meal plan is that
+                its tasty, too.&nbsp;&nbsp;The portions are just right, and
+                I&#39;ve felt better with &#34;clean food.
+              </p>
+              <div class="v2-stars-wrapper-9">
+                <div class="v2-stars-9">
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="v2-text-wrapper-3-9" style="font-family: Montserrat">
+                John K. (Coach)
+              </div>
+            </div>
+          </div>
+          <div class="v2-group-9">
+            <div class="v2-overlap-group-9">
+              <img class="v2-union-9" src="./assets/union.svg" />
+              <img class="v2-img-9" src="./assets/union-5.svg" />
+              <div class="v2-text-wrapper-4-9" style="font-family: Montserrat">
+                Convenient!
+              </div>
+              <p class="v2-this-is-a-convenient-9">
+                This is a convenient way to eat quality food that is healthy
+                and fresh.&nbsp;&nbsp;The best part of the meal plan is that
+                its tasty, too.&nbsp;&nbsp;The portions are just right, and
+                I&#39;ve felt better with &#34;clean food.
+              </p>
+              <div class="v2-stars-wrapper-9">
+                <div class="v2-stars-9">
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="v2-text-wrapper-5-9" style="font-family: Montserrat">
+                Dr. Rupley (Doctor)
+              </div>
+            </div>
+          </div>
+          <div class="v2-overlap-group-wrapper-9">
+            <div class="v2-overlap-group-9">
+              <img class="v2-union-9" src="./assets/union.svg" />
+              <img class="v2-img-9" src="./assets/union-5.svg" />
+              <div class="v2-text-wrapper-6-9" style="font-family: Montserrat">
+                Tasty!
+              </div>
+              <p class="v2-this-is-a-convenient-9">
+                This is a convenient way to eat quality food that is healthy
+                and fresh.&nbsp;&nbsp;The best part of the meal plan is that
+                its tasty, too.&nbsp;&nbsp;The portions are just right, and
+                I&#39;ve felt better with &#34;clean food.
+              </p>
+              <div class="v2-stars-wrapper-9">
+                <div class="v2-stars-9">
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="v2-text-wrapper-5-9" style="font-family: Montserrat">
+                Dr. Rupley (Doctor)
+              </div>
+            </div>
+          </div>
+          <img class="v2-image-9" src="./assets/image.png" />
+          <img class="v2-image-2-9" src="./assets/image-1.png" />
+          <img class="v2-image-3-9" src="./assets/image-2.png" />
+          <div class="v2-group-9">
+            <div class="v2-overlap-group-9">
+              <img class="v2-union-9" src="./assets/union.svg" />
+              <img class="v2-img-9" src="./assets/union-5.svg" />
+              <div class="v2-text-wrapper-2-9" style="font-family: Montserrat">
+                Innovative!
+              </div>
+              <p class="v2-this-is-a-convenient-9">
+                This is a convenient way to eat quality food that is healthy
+                and fresh.&nbsp;&nbsp;The best part of the meal plan is that
+                its tasty, too.&nbsp;&nbsp;The portions are just right, and
+                I&#39;ve felt better with &#34;clean food.
+              </p>
+              <div class="v2-stars-wrapper-9">
+                <div class="v2-stars-9">
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="v2-text-wrapper-3-9" style="font-family: Montserrat">
+                John K. (Coach)
+              </div>
+            </div>
+          </div>
+          <div class="v2-group-9">
+            <div class="v2-overlap-group-9">
+              <img class="v2-union-9" src="./assets/union.svg" />
+              <img class="v2-img-9" src="./assets/union-5.svg" />
+              <div class="v2-text-wrapper-4-9" style="font-family: Montserrat">
+                Convenient!
+              </div>
+              <p class="v2-this-is-a-convenient-9">
+                This is a convenient way to eat quality food that is healthy
+                and fresh.&nbsp;&nbsp;The best part of the meal plan is that
+                its tasty, too.&nbsp;&nbsp;The portions are just right, and
+                I&#39;ve felt better with &#34;clean food.
+              </p>
+              <div class="v2-stars-wrapper-9">
+                <div class="v2-stars-9">
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="v2-text-wrapper-5-9" style="font-family: Montserrat">
+                Dr. Rupley (Doctor)
+              </div>
+            </div>
+          </div>
+          <div class="v2-overlap-group-wrapper-9">
+            <div class="v2-overlap-group-9">
+              <img class="v2-union-9" src="./assets/union.svg" />
+              <img class="v2-img-9" src="./assets/union-5.svg" />
+              <div class="v2-text-wrapper-6-9" style="font-family: Montserrat">
+                Tasty!
+              </div>
+              <p class="v2-this-is-a-convenient-9">
+                This is a convenient way to eat quality food that is healthy
+                and fresh.&nbsp;&nbsp;The best part of the meal plan is that
+                its tasty, too.&nbsp;&nbsp;The portions are just right, and
+                I&#39;ve felt better with &#34;clean food.
+              </p>
+              <div class="v2-stars-wrapper-9">
+                <div class="v2-stars-9">
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                  <div class="v2-star-9">
+                    <img class="v2-star-2-9" src="./assets/star-1.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="v2-text-wrapper-5-9" style="font-family: Montserrat">
+                Dr. Rupley (Doctor)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="v2-div-3-9 mt-4">
+          <div class="v2-div-4-9" id="dots">
+            <div class="v2-ellipse-9"></div>
+            <div class="v2-ellipse-2-9"></div>
+            <div class="v2-ellipse-9"></div>
+            <div class="v2-ellipse-9"></div>
+            <div class="v2-ellipse-9"></div>
+          </div>
+          <div class="v2-div-5-9">
+            <div class="v2-iconamoon-arrow-up-wrapper-9" id="prevBtn">
+              <img class="v2-iconamoon-arrow-up-9" src="./assets/iconamoon-arrow-up-2.svg" />
+            </div>
+            <div class="v2-img-wrapper-9" id="nextBtn">
+              <img class="v2-iconamoon-arrow-up-2-9" src="./assets/iconamoon-arrow-up-2-1.svg" />
+            </div>
+          </div>
+        </div>
+        <img class="v2-group-2-9" src="./assets/group (1).png" />
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Navbar Script;
+    document.addEventListener("DOMContentLoaded", () => {
+      const quantityButtons = document.querySelectorAll(
+        ".v2-text-wrapper-13-2"
+      );
+
+      quantityButtons.forEach((btn) => {
+        const symbol = btn.textContent.trim();
+        if (symbol === "+" || symbol === "-") {
+          btn.addEventListener("click", () => {
+            const parent = btn.closest(".v2-div-6-2, .v2-div-8-2");
+            if (!parent) return;
+
+            const quantityElem = parent.querySelector(
+              ".v2-text-wrapper-14-2"
+            );
+            if (!quantityElem) return;
+
+            let quantity = parseInt(quantityElem.textContent.trim(), 10);
+            if (isNaN(quantity)) quantity = 1;
+
+            if (symbol === "+" && quantity < 99) {
+              quantity += 1;
+            } else if (symbol === "-" && quantity > 1) {
+              quantity -= 1;
+            }
+
+            quantityElem.textContent = quantity;
+          });
+        }
+      });
+    });
+
+    function toggleDropdown() {
+      const menu = document.getElementById("dropdownMenu");
+      console.log("clicked");
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+
+    // Close dropdown if clicked outside
+    window.addEventListener("click", function (e) {
+      if (!e.target.matches(".v2-mingcute-down-line-1")) {
+        const dropdown = document.getElementById("dropdownMenu");
+        dropdown.style.display = "none";
+      }
+    });
+
+    function toggleMobileMenu() {
+      const sidebar = document.getElementById("v2-mobileSidebar-1");
+      const menuBtn = document.querySelector(".v2-mobile-menu-btn-1");
+
+      sidebar.classList.toggle("active");
+      menuBtn.classList.toggle("active");
+    }
+
+    function closeMobileMenu() {
+      const sidebar = document.getElementById("v2-mobileSidebar-1");
+      const menuBtn = document.querySelector(".v2-mobile-menu-btn-1");
+
+      sidebar.classList.remove("active");
+      menuBtn.classList.remove("active");
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener("click", function (event) {
+      const sidebar = document.getElementById("v2-mobileSidebar-1");
+      const menuBtn = document.querySelector(".v2-mobile-menu-btn-1");
+
+      if (
+        !sidebar.contains(event.target) &&
+        !menuBtn.contains(event.target)
+      ) {
+        closeMobileMenu();
+      }
+    });
+
+    // Close menu on window resize if desktop
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 768) {
+        closeMobileMenu();
+      }
+    });
+
+    let currentSlide = 0;
+    const totalSlides = 6; // Total number of cards
+    const slideWidth = 456; // 424px width + 32px gap
+    const slidesToShow = 3; // Number of cards to show at once
+    const maxSlidePosition = Math.ceil(totalSlides / slidesToShow) - 1; // 2 positions (0 and 1)
+
+    const testimonialsContainer = document.getElementById("testimonialsContainer");
+    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn");
+    const dots = document.getElementById("dots").children;
+
+    function updateSlide() {
+      const translateX = -currentSlide * slideWidth * slidesToShow;
+      testimonialsContainer.style.transform = `translateX(${translateX}px)`;
+
+      // Update dots
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].className = i === currentSlide ? "v2-ellipse-2-9" : "v2-ellipse-9";
+      }
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % (maxSlidePosition + 1);
+      updateSlide();
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + maxSlidePosition + 1) % (maxSlidePosition + 1);
+      updateSlide();
+    }
+
+    // Add event listeners
+    nextBtn.addEventListener("click", nextSlide);
+    prevBtn.addEventListener("click", prevSlide);
+
+    // Add click handlers for dots
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].addEventListener("click", function () {
+        currentSlide = i;
+        updateSlide();
+      });
+      dots[i].style.cursor = "pointer";
+    }
+
+    // Auto-play carousel (optional)
+    setInterval(nextSlide, 5000);
+
+    // Initialize
+    updateSlide();
+
+  </script>
+</body>
+
+</html>

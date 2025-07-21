@@ -1,0 +1,372 @@
+/* Base Styles */
+.healthy-meals-section {
+  background-color: #baf700;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Typography */
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: #111111;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  letter-spacing: -0.02em;
+  margin-bottom: 0;
+}
+
+.card-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #080808;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 1.2rem;
+}
+
+.card-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #080808;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+.grab-go-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #080808;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 1.2rem;
+}
+
+.grab-go-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #080808;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Updated: Meal Card Layout with Maximum 42px Total Spacing */
+.meal-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.75rem; /* 28px - optimized for 42px total spacing */
+  min-height: 280px;
+}
+
+.meal-card-image {
+  flex: 0 0 auto;
+  width: 109.99528503417969px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meal-phone-img {
+  width: 109.99528503417969px;
+  height: 220.26759338378906px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.meal-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-left: 0.875rem; /* 14px - keeps total spacing at 42px */
+}
+
+/* Grab and Go Section */
+.grab-go-section {
+  align-items: flex-start;
+  gap: 2rem;
+  min-height: 150px;
+}
+
+.grab-go-image {
+  flex-shrink: 0;
+  width: 121px;
+  height: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fridge-img {
+  width: 121px;
+  height: 144px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Delivery Section */
+.delivery-map {
+  width: 100%;
+  height: auto;
+  max-width: 423px;
+  border-radius: 12px;
+}
+
+/* Order Button */
+.btn-order {
+  background-color: #111111;
+  border: none;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 180px;
+  min-height: 60px;
+  color: #baf700;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: clamp(0.5rem, 1.5vw, 1.1rem);
+  align-self: flex-start;
+}
+
+.btn-order:hover {
+  background-color: #333333;
+  transform: translateY(-2px);
+}
+
+.btn-icon {
+  position: relative;
+  width: 27px;
+  height: 34px;
+  flex-shrink: 0;
+}
+
+.icon-lock {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  top: 7px;
+  left: 0;
+  background-image: url('./assets/group.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.icon-handle {
+  position: absolute;
+  width: 13px;
+  height: 7px;
+  top: 0;
+  left: 7px;
+  background-image: url('./assets/group-1.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.btn-text {
+  font-size: clamp(0.5rem, 1.5vw, 1.1rem);
+  letter-spacing: 0.5px;
+}
+
+/* Updated Responsive Design with Consistent 42px Max Spacing */
+@media (min-width: 576px) {
+  .meal-card {
+      flex-direction: row;
+      gap: 1.75rem; /* 28px */
+  }
+  
+  .meal-card-content {
+      padding-left: 0.875rem; /* 14px - Total: 42px */
+  }
+}
+
+@media (min-width: 768px) {
+  .meal-card {
+      gap: 1.75rem; /* 28px */
+      min-height: 320px;
+  }
+  
+  .meal-card-image {
+      width: 131.99434204101562px;
+      height: 320px;
+  }
+  
+  .meal-phone-img {
+      width: 131.99434204101562px;
+      height: 264.32111206054688px;
+  }
+  
+  .meal-card-content {
+      padding-left: 0.875rem; /* 14px - Total: 42px */
+  }
+}
+
+@media (min-width: 992px) {
+  .meal-card {
+      gap: 1.75rem; /* 28px */
+      min-height: 360px;
+  }
+  
+  .meal-card-image {
+      width: 153.99339884902344px;
+      height: 360px;
+  }
+  
+  .meal-phone-img {
+      width: 153.99339884902344px;
+      height: 308.3746307373047px;
+  }
+  
+  .meal-card-content {
+      padding-left: 0.875rem; /* 14px - Total: 42px */
+  }
+  
+  .delivery-map {
+      max-width: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .meal-card {
+      gap: 1.75rem; /* 28px */
+      min-height: 400px;
+  }
+  
+  .meal-card-image {
+      width: 175.99245565621094px;
+      height: 400px;
+  }
+  
+  .meal-phone-img {
+      width: 175.99245565621094px;
+      height: 352.4281494140625px;
+  }
+  
+  .meal-card-content {
+      padding-left: 0.875rem; /* 14px - Total: 42px */
+  }
+  
+  .delivery-map {
+      max-width: 500px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section-title {
+      font-size: 3rem;
+  }
+  
+  .card-heading,
+  .grab-go-heading {
+      font-size: 2.2rem;
+  }
+  
+  .card-text,
+  .grab-go-text {
+      font-size: 1.3rem;
+  }
+  
+  .meal-card {
+      gap: 1.75rem; /* 28px */
+      min-height: 450px;
+  }
+  
+  .meal-card-image {
+      width: 197.99151246339844px;
+      height: 450px;
+  }
+  
+  .meal-phone-img {
+      width: 197.99151246339844px;
+      height: 396.4816680908203px;
+  }
+  
+  .meal-card-content {
+      padding-left: 0.875rem; /* 14px - Total: 42px */
+  }
+  
+  .delivery-map {
+      max-width: 550px;
+  }
+  
+  .btn-order {
+      min-width: 215px;
+      min-height: 68px;
+  }
+}
+
+/* Mobile Optimizations */
+@media (max-width: 575.98px) {
+  .healthy-meals-section {
+      padding: 2rem 0;
+  }
+  
+  .meal-card {
+      flex-direction: column;
+      text-align: center;
+      gap: 1.5rem; /* 24px for mobile */
+      min-height: auto;
+  }
+  
+  .meal-card-image {
+      width: 100%;
+      height: auto;
+      align-self: center;
+  }
+  
+  .meal-phone-img {
+      width: 109.99528503417969px;
+      height: 220.26759338378906px;
+  }
+  
+  .meal-card-content {
+      padding-left: 0;
+      text-align: center;
+  }
+  
+  .grab-go-section {
+      text-align: center;
+      flex-direction: column;
+      gap: 1.5rem;
+  }
+  
+  .btn-order {
+      margin: 0 auto;
+      align-self: center;
+  }
+  
+  .delivery-section {
+      margin-top: 2rem;
+  }
+}
+
+@media (max-width: 359.98px) {
+  .meal-phone-img {
+      width: 87.99622802734375px;
+      height: 176.21407470703125px;
+  }
+  
+  .fridge-img {
+      width: 100px;
+      height: 120px;
+  }
+  
+  .delivery-map {
+      max-width: 280px;
+  }
+  
+  .btn-order {
+      min-width: 160px;
+      min-height: 55px;
+      padding: 0.8rem 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.5rem !important; /* Adjust as needed */
+    white-space: nowrap;
+  }
+}

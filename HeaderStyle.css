@@ -1,0 +1,132 @@
+.v2-frame--1 {
+  background: #baf700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  height: 64px; /* Fixed height for desktop */
+  overflow: hidden;
+}
+
+.v2-frame-wrapper--1 {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 100%;
+}
+
+.v2-div--1 {
+  font-family: Montserrat;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 32px;
+}
+
+.v2-element-OFF-free-shipping--1 {
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111;
+}
+
+.v2-text-wrapper-2--1 {
+  font-weight: bold;
+  color: #111;
+  white-space: nowrap;
+}
+
+/* Mobile marquee styles */
+.v2-marquee-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  display: none; /* Hidden by default */
+  height: 100%;
+}
+
+.v2-marquee-text {
+  width: 100%;
+  font-family: Montserrat;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #111;
+  white-space: nowrap;
+  animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+/* Desktop view - marquee is completely hidden */
+@media (min-width: 992px) {
+  .v2-marquee-container {
+      display: none !important; /* Force hide on desktop */
+  }
+  
+  .v2-div--1 {
+      display: flex !important; /* Force show desktop version */
+  }
+}
+
+/* Mobile/Tablet view - show marquee, hide desktop version */
+@media (max-width: 991px) {
+  .v2-frame--1 {
+      height: 48px; /* Reduced height for mobile */
+      padding: 8px 0;
+  }
+  
+  .v2-frame-wrapper--1 {
+      height: auto;
+      padding: 0 16px; /* Reduced padding for mobile */
+  }
+  
+  .v2-div--1 {
+      display: none !important; /* Force hide desktop version */
+  }
+  
+  .v2-marquee-container {
+      display: flex !important; /* Force show marquee on mobile */
+  }
+  
+  .v2-marquee-text {
+      font-size: 0.85rem; /* Smaller font for mobile */
+  }
+}
+
+@media (max-width: 575px) {
+  .v2-frame--1 {
+      height: 42px; /* Further reduced for small mobile */
+  }
+  
+  .v2-frame-wrapper--1 {
+      padding: 0 12px;
+  }
+  
+  .v2-marquee-text {
+      font-size: 0.8rem; /* Even smaller font for small screens */
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) and (max-width: 991px) {
+  .v2-frame--1 {
+      height: 56px; /* Intermediate height for tablets */
+  }
+  
+  .v2-marquee-text {
+      font-size: 0.95rem; /* Slightly larger font for tablets */
+  }
+}

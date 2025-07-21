@@ -1,0 +1,193 @@
+.v2-object-fit-cover-8 {
+  object-fit: cover;
+}
+
+.v2-custom-order-btn-8 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 215px;
+  height: 68px;
+  background: #111111 !important;
+  border-radius: 6px;
+  transition: background 0.2s, transform 0.2s;
+  color: #baf700 !important;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  box-shadow: none;
+  margin-top: 50px;
+}
+
+.v2-custom-order-btn-8:hover,
+.v2-custom-order-btn-8:focus {
+  background: #333333 !important;
+  color: #baf700 !important;
+  transform: translateY(-2px);
+}
+
+.v2-custom-order-btn-8 img {
+  height: 32px;
+  width: auto;
+}
+.v2-hero-flex-8 {
+  min-height: 600px;
+  max-height: 900px;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.v2-hero-img-col-8 {
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 600px;
+  max-height: 900px;
+  overflow: hidden;
+}
+
+.v2-hero-bg-img-8 {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  max-height: 900px;
+  object-fit: cover;
+  object-position: left center;
+  display: block;
+}
+
+.v2-right-panel-custom-8 {
+  width: 440px;
+  min-width: 320px;
+  max-width: 100vw;
+  background: #fffae9;
+  min-height: 600px;
+  max-height: 900px;
+  box-shadow: -1px 0 0 #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+
+@media (max-width: 991.98px) {
+  .v2-hero-flex-8 {
+    flex-direction: column !important;
+    min-height: unset !important;
+    max-height: unset !important;
+    width: 100vw !important;
+  }
+  .v2-hero-flex-8.d-flex.flex-row {
+    flex-direction: column !important;
+  }
+  .v2-hero-img-col-8 {
+    min-height: unset !important;
+    max-height: unset !important;
+    width: 100vw !important;
+    height: 50vh !important;
+    flex: none !important;
+  }
+  .v2-hero-img-col-8.flex-grow-1 {
+    flex: none !important;
+  }
+  .v2-hero-bg-img-8 {
+    width: 100vw !important;
+    height: 50vh !important;
+    min-height: unset !important;
+    max-height: unset !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    display: block !important;
+  }
+  .v2-hero-bg-img-8.img-fluid.w-100.h-100 {
+    width: 100vw !important;
+    height: 50vh !important;
+  }
+  .v2-right-panel-custom-8 {
+    width: 100vw !important;
+    min-width: 0 !important;
+    min-height: 50vh !important;
+    max-height: unset !important;
+    margin-top: 0 !important;
+    box-shadow: none !important;
+    padding: 1.5rem 0.75rem !important;
+  }
+  .v2-right-panel-custom-8 h2 {
+    font-size: 1.3rem !important;
+  }
+  .v2-right-panel-custom-8 p {
+    font-size: 0.95rem !important;
+    width: 100% !important;
+  }
+  .v2-custom-order-btn-8 {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 48px !important;
+    font-size: 0.95rem !important;
+    padding: 0.5rem 1rem !important;
+    margin-top: 24px !important;
+  }
+  .v2-custom-order-btn-8 img {
+    height: 24px !important;
+  }
+  .v2-right-panel-custom-8 div[style*="margin-top: 200px"] {
+    margin-top: 40px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* Bootstrap classes used in HTML */
+  .hero-flex {
+    flex-direction: column !important;
+    min-height: unset;
+    max-height: unset;
+    width: 100vw;
+  }
+  .hero-img-col {
+    min-height: unset;
+    max-height: unset;
+    width: 100vw;
+    height: 50vh;
+  }
+  .hero-bg-img {
+    width: 100vw;
+    height: 50vh;
+    min-height: unset;
+    max-height: unset;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+  .right-panel-custom {
+    padding: 1.5rem 0.75rem !important;
+    width: 100vw;
+    min-width: 0;
+    min-height: 50vh;
+    max-height: unset;
+    margin-top: 0;
+    box-shadow: none;
+  }
+  .right-panel-custom h2 {
+    font-size: 1.3rem !important;
+  }
+  .right-panel-custom p {
+    font-size: 0.95rem !important;
+    width: 100% !important;
+  }
+  .custom-order-btn {
+    width: 100%;
+    min-width: 0;
+    height: 48px;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    margin-top: 24px;
+  }
+  .custom-order-btn img {
+    height: 24px;
+  }
+  .right-panel-custom div[style*="margin-top: 200px"] {
+    margin-top: 40px !important;
+  }
+}
