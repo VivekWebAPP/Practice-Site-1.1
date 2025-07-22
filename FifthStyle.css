@@ -281,3 +281,10 @@
     --bs-gutter-y: 1rem;
   }
 }
+
+@media (max-width: 575.98px) {
+  .how-it-works-mobile-ps2 {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}

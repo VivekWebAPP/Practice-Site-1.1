@@ -340,6 +340,22 @@
   .delivery-section {
       margin-top: 2rem;
   }
+
+  .healthy-meals-mobile-margin {
+    margin-left: 1.2rem !important;
+    margin-right: 1.2rem !important;
+  }
+
+  .healthy-meals-mobile-margin {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .healthy-meals-mobile-margin > * {
+    width: 100%;
+    text-align: center !important;
+  }
 }
 
 @media (max-width: 359.98px) {
@@ -364,9 +380,13 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
   .section-title {
     font-size: 1.5rem !important; /* Adjust as needed */
-    white-space: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0 !important; /* Let parent margin handle spacing */
+    margin-right: 0 !important;
+    text-align: center;
   }
 }

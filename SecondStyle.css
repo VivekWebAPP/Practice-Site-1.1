@@ -188,3 +188,666 @@
     padding-bottom: 6px !important;
   }
 }
+
+
+.meal-card-custom {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px #00000014;
+  max-width: 350px;
+  height: 420px;
+  width: 100%;
+  position: relative;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-bottom: 0;
+  margin-top: 70px;
+  /* space for image overlap */
+}
+
+.meal-img-custom {
+  width: 200px;
+  height: 281px;
+  object-fit: cover;
+  border-radius: 60px;
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background: #fff;
+}
+
+.card-body {
+  width: 100%;
+  height: 273px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.meal-title-custom {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  text-align: center;
+  color: #111;
+  letter-spacing: 0.01em;
+  padding-top: 220px;
+}
+
+.meal-nutrition-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  background: none;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.meal-nutrition-custom > div {
+  text-align: center;
+  min-width: 56px;
+}
+
+.nutr-val {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #111;
+}
+
+.nutr-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  color: #888;
+  font-weight: 500;
+  display: block;
+}
+
+.meal-price-custom {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: #111;
+  padding-left: 15px;
+}
+
+.cart-controls-custom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  padding: 2px 14px;
+}
+
+.cart-btn-custom {
+  background: #f0f0f0;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cart-qty-custom {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  min-width: 18px;
+  text-align: center;
+}
+
+.add-to-cart-btn-custom {
+  background: #baf700;
+  color: #111;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+  padding: 0.9rem 0;
+  font-size: 1rem;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  bottom: 0;
+  transition: background 0.2s;
+  box-shadow: none;
+}
+
+.add-to-cart-btn-custom:hover,
+.add-to-cart-btn-custom:focus {
+  background: #a0e000;
+  color: #111;
+}
+
+@media (max-width: 576px) {
+  .meal-card-custom, .cart-controls-custom, .add-to-cart-btn-custom {
+    display: none !important; /* Hide old cards/buttons on mobile */
+  }
+
+  .mobile-meal-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 16px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .mobile-meal-card-top {
+    display: flex;
+    align-items: flex-start;
+  }
+  .mobile-meal-img {
+    width: 64px;
+    height: 90px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 16px;
+  }
+  .mobile-meal-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+  .mobile-meal-calories {
+    color: #bdbdbd;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
+  .mobile-meal-price-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .mobile-meal-price {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .mobile-meal-add-btn {
+    background: #d6ff3e;
+    color: #222;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 6px 24px;
+    margin-left: 12px;
+    transition: background 0.2s;
+  }
+  .mobile-meal-add-btn:active {
+    background: #c0e636;
+  }
+  .mobile-meal-ingredients {
+    background: #fafbfc;
+    border-radius: 0 0 16px 16px;
+    margin-top: 16px;
+    padding: 12px 8px 8px 8px;
+  }
+  .mobile-meal-ingredients-label {
+    color: #bdbdbd;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 4px;
+  }
+  .mobile-meal-ingredients-list {
+    color: #222;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 575.98px) {
+  .meal-nutrition-custom {
+    flex-wrap: nowrap;
+    gap: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 2px;
+  }
+
+  .meal-nutrition-custom > div {
+    min-width: 28px;
+    padding: 0 1px;
+  }
+
+  .nutr-val {
+    font-size: 0.45rem;
+  }
+
+  .nutr-label {
+    font-size: 0.35rem;
+  }
+
+  .nutrition-divider {
+    width: 6px;
+    height: 36px;
+    margin: 0 0.5px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1199.98px) {
+  .meal-nutrition-custom {
+    flex-wrap: nowrap;
+    gap: 0;
+    margin-bottom: 2px;
+  }
+
+  .meal-nutrition-custom > div {
+    min-width: 32px;
+    padding: 0 2px;
+  }
+
+  .nutr-val {
+    font-size: 0.6rem;
+  }
+
+  .nutr-label {
+    font-size: 0.45rem;
+  }
+
+  .nutrition-divider {
+    width: 10px;
+    height: 40px;
+    margin: 0 1px;
+  }
+}
+
+/* Move this block to the end of the file for highest priority */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .meal-nutrition-custom {
+    margin-bottom: 8px !important;
+  }
+
+  .meal-nutrition-custom > div {
+    min-width: 44px !important;
+    padding: 0 6px !important;
+  }
+
+  .nutr-val {
+    font-size: 0.85rem !important;
+  }
+
+  .nutr-label {
+    font-size: 0.65rem !important;
+  }
+
+  .nutrition-divider {
+    width: 16px !important;
+    height: 48px !important;
+    margin: 0 4px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .meal-card-custom {
+    max-width: 220px;
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    margin-top: 24px;
+    border-radius: 8px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .meal-img-custom {
+    width: 140px;
+    height: 190px;
+    border-radius: 22px;
+    top: 0px;
+    border-width: 3px;
+  }
+
+  .card-body {
+    padding: 90px 6px 8px 6px !important;
+    height: auto;
+  }
+
+  .meal-title-custom {
+    padding-top: 90px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .meal-img-custom {
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 18px !important;
+    top: -30px !important;
+    border-width: 3px !important;
+  }
+
+  .card-body {
+    padding: 80px 8px 8px 8px !important;
+    height: auto;
+  }
+
+  .meal-title-custom {
+    padding-top: 80px !important;
+    font-size: 0.85rem !important;
+  }
+
+  .nutr-val {
+    font-size: 0.7rem !important;
+  }
+
+  .nutr-label {
+    font-size: 0.5rem !important;
+  }
+
+  .add-to-cart-btn-custom {
+    font-size: 0.85rem !important;
+    padding: 0.5rem 0 !important;
+    border-radius: 0 0 8px 8px !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .meal-card-custom {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    height: auto !important;
+  }
+
+  .card-body {
+    align-items: stretch !important;
+    height: auto !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .add-to-cart-btn-custom {
+    width: 100% !important;
+    margin: 0 !important;
+    position: static !important;
+    top: 0 !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .filter-btn {
+    min-width: 90px;
+    height: 36px;
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  .filter-bar {
+    gap: 8px !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .card-body {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .meal-img-custom {
+    width: 120px !important;
+    height: 170px !important;
+    border-radius: 18px !important;
+    top: -30px !important;
+    border-width: 3px !important;
+  }
+
+  .add-to-cart-btn-custom {
+    position: static !important;
+    margin-top: 0 !important;
+    top: 0 !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .d-flex.justify-content-between.align-items-center.mb-3 {
+    margin-bottom: 0.2rem !important;
+  }
+
+  .meal-nutrition-custom {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    justify-content: center !important;
+  }
+}
+
+/* Responsive filter bar for mobile */
+@media (max-width: 576px) {
+  .filter-bar {
+    overflow-x: auto;
+    flex-wrap: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+    gap: 8px !important;
+    padding-bottom: 4px;
+  }
+  .filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+  .filter-btn {
+    min-width: 110px;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-size: 0.95rem;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #eee;
+  }
+  .filter-btn img {
+    margin-right: 6px;
+    max-width: 22px;
+    height: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .meal-card-custom {
+    margin-top: 6px !important;
+    margin-bottom: 6px !important;
+  }
+  .row.g-5 {
+    --bs-gutter-x: 0.5rem !important;
+    --bs-gutter-y: 1.5rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .meal-nutrition-custom {
+    min-height: 22px !important;
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+  }
+  .meal-nutrition-custom > div {
+    line-height: 1.1 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+.meal-card-custom .d-flex.justify-content-between.align-items-center.mb-3 {
+  margin-bottom: 0.5rem !important; /* or 0.25rem, or 0 for no space */
+}
+
+@media (max-width: 575.98px) {
+  .meals-section .meals-header {
+    font-size: 1.2rem;
+    padding: 0.3rem 1rem;
+  }
+  .meals-section .meals-subtitle {
+    font-size: 0.8rem;
+  }
+}
+
+/* Make all nav links normal weight by default */
+#mealTabs .nav-link {
+  font-weight: 400;
+}
+
+/* Make only the active tab bold */
+#mealTabs .nav-link.active {
+  font-weight: 700;
+}
+
+/* Scrollable tabs on mobile */
+@media (max-width: 991.98px) {
+  .scrollable-tabs-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+  }
+  .nav-tabs {
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    white-space: nowrap;
+    border-bottom: none;
+    scrollbar-width: none; /* Firefox */
+  }
+  .nav-tabs::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+  .nav-tabs .nav-item {
+    flex: 0 0 auto;
+  }
+  .nav-tabs .nav-link {
+    margin-right: 18px;
+    margin-left: 0;
+  }
+  .nav-tabs .nav-item:last-child .nav-link {
+    margin-right: 0;
+  }
+  .scroll-blur {
+    position: absolute;
+    top: 0; bottom: 0;
+    width: 36px;
+    pointer-events: none;
+    z-index: 2;
+    transition: opacity 0.2s;
+    opacity: 0;
+    /* Remove blur filter! */
+  }
+  .scroll-blur-left {
+    left: 0;
+    background: linear-gradient(to right, #fff 60%, rgba(255,255,255,0) 100%);
+  }
+  .scroll-blur-right {
+    right: 0;
+    background: linear-gradient(to left, #fff 60%, rgba(255,255,255,0) 100%);
+  }
+  .scroll-blur.visible {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1199.98px) {
+  .meals-section .mb-2[style*="font-size:24px"] {
+    font-size: 18px !important;
+  }
+  .meals-section .meals-header {
+    font-size: 32px !important;
+    padding: 0.4rem 1.5rem;
+  }
+  .meals-section .meals-subtitle {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* ----------  MOBILE CARD STYLES (unchanged except for width & margin) ---------- */
+@media (max-width:576px){
+  .mobile-meal-card-v2{
+    background:#fff;
+    border-radius:16px;
+    box-shadow:0 2px 12px rgba(0,0,0,0.08);
+    padding:12px 8px;
+    width:100%;
+    max-width:320px;
+    margin:0 auto 15px auto;
+    box-sizing:border-box;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .mobile-meal-card-v2-inner{ display:flex; width:100%; align-items:center; }
+
+  .mobile-meal-img-v2{
+    width:64px;
+    height:100px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-right:10px;
+  }
+
+  .mobile-meal-content-v2{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    min-width:0;
+  }
+
+  .mobile-meal-title-v2{
+    font-size:1rem;
+    font-weight:700;
+    margin-bottom:6px;
+    font-family:'Montserrat',sans-serif;
+    word-break:break-word;
+  }
+
+  .mobile-meal-nutrition-row-v2{ margin-bottom:6px; gap:6px; flex-wrap:wrap; }
+
+  .nutr-block-v2{ text-align:center; min-width:36px; }
+  .nutr-val-v2  { font-weight:700; font-size:0.9rem; display:block; }
+  .nutr-label-v2{ font-size:.7rem; color:#888; display:block; }
+
+  .nutr-divider-v2{
+    width:1px;
+    height:18px;
+    background:#e0e0e0;
+    margin:0 2px;
+  }
+
+  .mobile-meal-price-row-v2{ margin-top:6px; align-items:center; }
+  .mobile-meal-price-v2{ font-size:1rem; font-weight:700; color:#111; }
+
+  .mobile-meal-add-btn-v2{
+    background:#d6ff3e;
+    color:#111;
+    font-weight:700;
+    border:none;
+    border-radius:8px;
+    padding:6px 14px;
+    font-size:0.95rem;
+    margin-left:8px;
+    display:flex;
+    align-items:center;
+    box-shadow:0 1px 4px rgba(0,0,0,0.04);
+    transition:background .2s;
+    white-space:nowrap;
+  }
+  .mobile-meal-add-btn-v2:active{ background:#baf700; }
+}

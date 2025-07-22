@@ -213,15 +213,15 @@
 
     <!-- Mobile View - RIGHT ALIGNED -->
     <section
-        class="v2-hero-banner-mobile d-flex d-md-none flex-column justify-content-center align-items-end position-relative"
+        class="v2-hero-banner-mobile d-flex d-md-none flex-column justify-content-start align-items-end position-relative"
         style="min-height: 100vh; width: 100vw; overflow: hidden; padding: 20px;">
         <!-- Mobile Background Image -->
         <img src="assets/Mobile_View_Hero_Background.png"
             class="mobile-hero-bg-img position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
             alt="Mobile Hero Background" style="z-index: 1;" />
 
-        <div class="container-fluid position-relative" style="z-index: 2;">
-            <div class="row justify-content-end">
+        <div class="container-fluid position-relative mt-5" style="z-index: 2; margin-top: 150px;">
+            <div class="row justify-content-center align-items-center">
                 <div class="col-11 col-sm-10 text-end">
 
                     <!-- Mobile Eat Healthy Badge - RIGHT ALIGNED -->
@@ -316,486 +316,242 @@
 
     <!-- Cards -->
     <div class="row g-4 justify-content-center align-items-center align-content-center mt-5">
-      <!-- Card 1 -->
-      <div class="col-6 col-md-4 col-lg-3 mt-5 d-flex justify-content-center">
-        <div class="d-flex flex-column align-items-center w-100 p-2 p-lg-2">
-          <div class="position-relative w-100" style="
-                background: #fff;
-                border-radius: 8px;
-                min-height: 374px;
-                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-              ">
-            <!-- Food Image (overlapping top) -->
-            <img src="./assets/food1.png" alt="Blackened Chicken"
-              class="position-absolute start-50 translate-middle-x v2-meal-card-img-2" style="
-                  top: -60px;
-                  width: 172px;
-                  height: 252px;
-                  object-fit: contain;
-                  background: transparent !important;
-                  border-radius: 32px;
-                " />
-            <!-- Card Content -->
-            <div class="pt-5 px-3 pb-0 v2-meal-card-content-2" style="margin-top: 150px">
-              <div class="fw-bold text-uppercase text-center v2-meal-card-title-2" style="
-                    font-size: 18px;
-                    margin-bottom: 8px;
-                    font-family: Montserrat;
-                  ">
-                BLACKENED CHICKEN
+      <!-- Blackened Chicken Card -->
+      <div class="col-12 d-block d-sm-none align-items-center justify-content-center">
+        <div class="mobile-meal-card-v2">
+          <div class="mobile-meal-card-v2-inner d-flex">
+            <img src="assets/food-9-1.png" class="mobile-meal-img-v2" alt="Blackened Chicken">
+            <div class="mobile-meal-content-v2 flex-grow-1">
+              <div class="mobile-meal-title-v2">Blackened Chicken</div>
+              <div class="mobile-meal-nutrition-row-v2 d-flex align-items-center">
+                <div class="nutr-block-v2"><span class="nutr-val-v2">400</span><span class="nutr-label-v2">Kcal</span></div>
+                <div class="nutr-divider-v2"></div>
+                <div class="nutr-block-v2"><span class="nutr-val-v2">42g</span><span class="nutr-label-v2">Carbs</span></div>
+                <div class="nutr-divider-v2"></div>
+                <div class="nutr-block-v2"><span class="nutr-val-v2">46g</span><span class="nutr-label-v2">Protein</span></div>
+                <div class="nutr-divider-v2"></div>
+                <div class="nutr-block-v2"><span class="nutr-val-v2">6g</span><span class="nutr-label-v2">Fat</span></div>
               </div>
-              <!-- Nutrition Row -->
-              <div class="d-flex justify-content-between align-items-center mb-3 px-1 v2-meal-card-nutrition-2"
-                style="gap: 0.25rem">
-                <div class="text-center" style="width: 40px">
-                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
-                    400
-                  </div>
-                  <div style="font-size: 8px; font-family: Montserrat">
-                    Kcal
-                  </div>
-                </div>
-                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
-                <div class="text-center" style="width: 40px">
-                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
-                    42g
-                  </div>
-                  <div style="font-size: 8px; font-family: Montserrat">
-                    Carbs
-                  </div>
-                </div>
-                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
-                <div class="text-center" style="width: 40px">
-                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
-                    46g
-                  </div>
-                  <div style="font-size: 8px; font-family: Montserrat">
-                    Protein
-                  </div>
-                </div>
-                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
-                <div class="text-center" style="width: 40px">
-                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
-                    6g
-                  </div>
-                  <div style="font-size: 8px; font-family: Montserrat">
-                    Fat
-                  </div>
-                </div>
-              </div>
-              <!-- Price and Quantity -->
-              <div class="d-flex justify-content-between align-items-center mb-2 v2-meal-card-priceqty-2"
-                style="width: 100%; margin: auto">
-                <span class="fw-bold" style="
-                      font-size: 16px;
-                      font-family: Montserrat;
-                      margin-bottom: 20px;
-                    ">$11.50</span>
-                <div class="d-flex align-items-center gap-1" style="margin-bottom: 20px">
-                  <button class="btn btn-sm" style="
-                        background: #d9d9d9;
-                        border-radius: 50%;
-                        width: 28px;
-                        height: 28px;
-                        padding: 0;
-                      ">
-                    -
-                  </button>
-                  <span class="fw-semibold" style="font-size: 16px; font-family: Montserrat">1</span>
-                  <button class="btn btn-sm" style="
-                        background: #d9d9d9;
-                        border-radius: 50%;
-                        width: 28px;
-                        height: 28px;
-                        padding: 0;
-                      ">
-                    +
-                  </button>
-                </div>
+              <div class="mobile-meal-price-row-v2 d-flex align-items-center mt-2">
+                <div class="mobile-meal-price-v2">$11.50</div>
+                <button class="mobile-meal-add-btn-v2 ms-auto">
+                  <img src="assets/add_to_cart.png" alt="Add" style="height: 20px; margin-right: 8px;">
+                  Add
+                </button>
               </div>
             </div>
-            <!-- Add to Cart Button -->
-            <button class="w-100 fw-bold d-flex align-items-center justify-content-center v2-meal-card-btn-2" style="
-                  background: #baf700;
-                  color: #111;
-                  border-radius: 0 0 8px 8px;
-                  height: 51px;
-                  font-size: 14px;
-                  border: none;
-                  position: absolute;
-                  left: 0;
-                  bottom: 0;
-                ">
-              <img src="./assets/Group 28318.png" alt="cart" style="
-                    height: 19px;
-                    margin-right: 8px;
-                    font-family: Montserrat;
-                  " />
-              ADD TO CART
-            </button>
           </div>
         </div>
       </div>
-      <!-- Card 2 -->
-      <div class="col-6 col-md-4 col-lg-3 mt-5 d-flex justify-content-center">
-        <div class="d-flex flex-column align-items-center w-100 p-2 p-lg-2">
-          <div class="position-relative w-100" style="
-                background: #fff;
-                border-radius: 8px;
-                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-                min-height: 374px;
-              ">
-            <!-- Food Image (overlapping top) -->
-            <img src="./assets/FirstPageFood1.png" alt="Chicken Parmigiana"
-              class="position-absolute start-50 translate-middle-x v2-meal-card-img-2" style="
-                  top: -60px;
-                  width: 172px;
-                  height: 252px;
-                  object-fit: cover;
-                  background-color: transparent;
-                  border-radius: 50px;
-                " />
-            <!-- Card Content -->
-            <div class="pt-5 pb-0 px-3 v2-meal-card-content-2" style="margin-top: 150px">
-              <div class="fw-bold text-uppercase text-center v2-meal-card-title-2" style="
-                    font-size: 18px;
-                    margin-bottom: 8px;
-                    font-family: Montserrat;
-                  ">
-                CHICKEN PARMIGIANA
+
+      <!-- Chicken Parmigiana Card -->
+      <div class="col-12 d-block d-sm-none">
+        <div class="mobile-meal-card-v2">
+          <div class="mobile-meal-card-v2-inner d-flex">
+            <img src="assets/food-10.png" class="mobile-meal-img-v2" alt="Chicken Parmigiana">
+            <div class="mobile-meal-content-v2 flex-grow-1">
+              <div class="mobile-meal-title-v2">Chicken Parmigiana</div>
+              <div class="mobile-meal-nutrition-row-v2 d-flex align-items-center">
+                <div class="nutr-block-v2"><span class="nutr-val-v2">400</span><span class="nutr-label-v2">Kcal</span></div>
+                <div class="nutr-divider-v2"></div>
+                <div class="nutr-block-v2"><span class="nutr-val-v2">42g</span><span class="nutr-label-v2">Carbs</span></div>
+                <div class="nutr-divider-v2"></div>
+                <div class="nutr-block-v2"><span class="nutr-val-v2">46g</span><span class="nutr-label-v2">Protein</span></div>
+                <div class="nutr-divider-v2"></div>
+                <div class="nutr-block-v2"><span class="nutr-val-v2">6g</span><span class="nutr-label-v2">Fat</span></div>
               </div>
-              <!-- Nutrition Row -->
-              <div class="d-flex justify-content-between align-items-center mb-3 px-1 v2-meal-card-nutrition-2"
-                style="gap: 0.25rem">
-                <div class="text-center" style="width: 40px">
-                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
-                    400
-                  </div>
-                  <div style="font-size: 8px; font-family: Montserrat">
-                    Kcal
-                  </div>
-                </div>
-                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
-                <div class="text-center" style="width: 40px">
-                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
-                    42g
-                  </div>
-                  <div style="font-size: 8px; font-family: Montserrat">
-                    Carbs
-                  </div>
-                </div>
-                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
-                <div class="text-center" style="width: 40px">
-                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
-                    46g
-                  </div>
-                  <div style="font-size: 8px; font-family: Montserrat">
-                    Protein
-                  </div>
-                </div>
-                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
-                <div class="text-center" style="width: 40px">
-                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
-                    6g
-                  </div>
-                  <div style="font-size: 8px; font-family: Montserrat">
-                    Fat
-                  </div>
-                </div>
-              </div>
-              <!-- Price and Quantity -->
-              <div class="d-flex justify-content-between align-items-center mb-2 v2-meal-card-priceqty-2"
-                style="width: 100%; margin: auto">
-                <span class="fw-bold" style="
-                      font-size: 16px;
-                      font-family: Montserrat;
-                      margin-bottom: 20px;
-                    ">$70.00</span>
-                <div class="d-flex align-items-center gap-1" style="margin-bottom: 20px">
-                  <button class="btn btn-sm" style="
-                        background: #d9d9d9;
-                        border-radius: 50%;
-                        width: 28px;
-                        height: 28px;
-                        padding: 0;
-                      ">
-                    -
-                  </button>
-                  <span class="fw-semibold" style="font-size: 16px; font-family: Montserrat">1</span>
-                  <button class="btn btn-sm" style="
-                        background: #d9d9d9;
-                        border-radius: 50%;
-                        width: 28px;
-                        height: 28px;
-                        padding: 0;
-                      ">
-                    +
-                  </button>
-                </div>
+              <div class="mobile-meal-price-row-v2 d-flex align-items-center mt-2">
+                <div class="mobile-meal-price-v2">$70.00</div>
+                <button class="mobile-meal-add-btn-v2 ms-auto">
+                  <img src="assets/add_to_cart.png" alt="Add" style="height: 20px; margin-right: 8px;">
+                  Add
+                </button>
               </div>
             </div>
-            <!-- Add to Cart Button -->
-            <button class="w-100 fw-bold d-flex align-items-center justify-content-center v2-meal-card-btn-2" style="
-                  background: #baf700;
-                  color: #111;
-                  border-radius: 0 0 8px 8px;
-                  height: 51px;
-                  font-size: 14px;
-                  border: none;
-                  position: absolute;
-                  left: 0;
-                  bottom: 0;
-                ">
-              <img src="./assets/Group 28318.png" alt="cart" style="
-                    height: 19px;
-                    margin-right: 8px;
-                    font-family: Montserrat;
-                  " />
-              ADD TO CART
-            </button>
           </div>
         </div>
       </div>
-      <!-- Card 3 -->
-      <div class="col-6 col-md-4 col-lg-3 mt-5 d-flex justify-content-center">
-        <div class="d-flex flex-column align-items-center w-100 p-2 p-lg-2">
-          <div class="position-relative w-100" style="
-                background: #fff;
-                border-radius: 8px;
-                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-                min-height: 374px;
-              ">
-            <!-- Food Image (overlapping top) -->
-            <img src="./assets/food3.png" alt="Korean Beef"
-              class="position-absolute start-50 translate-middle-x v2-meal-card-img-2" style="
-                  top: -60px;
-                  width: 172px;
-                  height: 252px;
-                  object-fit: cover;
-                  background-color: transparent;
-                  border-radius: 50px;
-                " />
-            <!-- Card Content -->
-            <div class="pt-5 pb-0 px-3 v2-meal-card-content-2" style="margin-top: 150px">
-              <div class="fw-bold text-uppercase text-center v2-meal-card-title-2" style="
-                    font-size: 18px;
-                    margin-bottom: 8px;
-                    font-family: Montserrat;
-                  ">
-                KOREAN BEEF
+
+      <!-- Korean Beef Card -->
+      <div class="col-12 d-block d-sm-none">
+        <div class="mobile-meal-card-v2">
+          <div class="mobile-meal-card-v2-inner d-flex">
+            <img src="assets/food-10-1.png" class="mobile-meal-img-v2" alt="Korean Beef">
+            <div class="mobile-meal-content-v2 flex-grow-1">
+              <div class="mobile-meal-title-v2">Korean Beef</div>
+              <div class="mobile-meal-nutrition-row-v2 d-flex align-items-center">
+                <div class="nutr-block-v2"><span class="nutr-val-v2">400</span><span class="nutr-label-v2">Kcal</span></div>
+                <div class="nutr-divider-v2"></div>
+                <div class="nutr-block-v2"><span class="nutr-val-v2">42g</span><span class="nutr-label-v2">Carbs</span></div>
+                <div class="nutr-divider-v2"></div>
+                <div class="nutr-block-v2"><span class="nutr-val-v2">46g</span><span class="nutr-label-v2">Protein</span></div>
+                <div class="nutr-divider-v2"></div>
+                <div class="nutr-block-v2"><span class="nutr-val-v2">6g</span><span class="nutr-label-v2">Fat</span></div>
               </div>
-              <!-- Nutrition Row -->
-              <div class="d-flex justify-content-between align-items-center mb-3 px-1 v2-meal-card-nutrition-2"
-                style="gap: 0.25rem">
-                <div class="text-center" style="width: 40px">
-                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
-                    400
-                  </div>
-                  <div style="font-size: 8px; font-family: Montserrat">
-                    Kcal
-                  </div>
-                </div>
-                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
-                <div class="text-center" style="width: 40px">
-                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
-                    42g
-                  </div>
-                  <div style="font-size: 8px; font-family: Montserrat">
-                    Carbs
-                  </div>
-                </div>
-                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
-                <div class="text-center" style="width: 40px">
-                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
-                    46g
-                  </div>
-                  <div style="font-size: 8px; font-family: Montserrat">
-                    Protein
-                  </div>
-                </div>
-                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
-                <div class="text-center" style="width: 40px">
-                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
-                    6g
-                  </div>
-                  <div style="font-size: 8px; font-family: Montserrat">
-                    Fat
-                  </div>
-                </div>
-              </div>
-              <!-- Price and Quantity -->
-              <div class="d-flex justify-content-between align-items-center mb-2 v2-meal-card-priceqty-2"
-                style="width: 100%; margin: auto">
-                <span class="fw-bold" style="
-                      font-size: 16px;
-                      font-family: Montserrat;
-                      margin-bottom: 20px;
-                    ">$11.50</span>
-                <div class="d-flex align-items-center gap-1" style="margin-bottom: 20px">
-                  <button class="btn btn-sm" style="
-                        background: #d9d9d9;
-                        border-radius: 50%;
-                        width: 28px;
-                        height: 28px;
-                        padding: 0;
-                      ">
-                    -
-                  </button>
-                  <span class="fw-semibold" style="font-size: 16px; font-family: Montserrat">1</span>
-                  <button class="btn btn-sm" style="
-                        background: #d9d9d9;
-                        border-radius: 50%;
-                        width: 28px;
-                        height: 28px;
-                        padding: 0;
-                      ">
-                    +
-                  </button>
-                </div>
+              <div class="mobile-meal-price-row-v2 d-flex align-items-center mt-2">
+                <div class="mobile-meal-price-v2">$11.50</div>
+                <button class="mobile-meal-add-btn-v2 ms-auto">
+                  <img src="assets/add_to_cart.png" alt="Add" style="height: 20px; margin-right: 8px;">
+                  Add
+                </button>
               </div>
             </div>
-            <!-- Add to Cart Button -->
-            <button class="w-100 fw-bold d-flex align-items-center justify-content-center v2-meal-card-btn-2" style="
-                  background: #baf700;
-                  color: #111;
-                  border-radius: 0 0 8px 8px;
-                  height: 51px;
-                  font-size: 14px;
-                  border: none;
-                  position: absolute;
-                  left: 0;
-                  bottom: 0;
-                ">
-              <img src="./assets/Group 28318.png" alt="cart" style="
-                    height: 19px;
-                    margin-right: 8px;
-                    font-family: Montserrat;
-                  " />
-              ADD TO CART
-            </button>
           </div>
         </div>
       </div>
-      <!-- Card 4 -->
-      <div class="col-6 col-md-4 col-lg-3 mt-5 d-flex justify-content-center">
-        <div class="d-flex flex-column align-items-center w-100 p-2 p-lg-2">
-          <div class="position-relative w-100" style="
-                background: #fff;
-                border-radius: 8px;
-                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-                min-height: 374px;
-              ">
-            <!-- Food Image (overlapping top) -->
-            <img src="./assets/food4.png" alt="Protein Pancake"
-              class="position-absolute start-50 translate-middle-x v2-meal-card-img-2" style="
-                  top: -60px;
-                  width: 172px;
-                  height: 252px;
-                  object-fit: cover;
-                  background-color: transparent;
-                  border-radius: 50px;
-                " />
-            <!-- Card Content -->
-            <div class="pt-5 pb-0 px-3 v2-meal-card-content-2" style="margin-top: 150px">
-              <div class="fw-bold text-uppercase text-center v2-meal-card-title-2" style="
-                    font-size: 18px;
-                    margin-bottom: 8px;
-                    font-family: Montserrat;
-                  ">
-                PROTEIN PANCAKE
+
+      <!-- Protein Pancake Card -->
+      <div class="col-12 d-block d-sm-none">
+        <div class="mobile-meal-card-v2">
+          <div class="mobile-meal-card-v2-inner d-flex">
+            <img src="assets/food-11.png" class="mobile-meal-img-v2" alt="Protein Pancake">
+            <div class="mobile-meal-content-v2 flex-grow-1">
+              <div class="mobile-meal-title-v2">Protein Pancake</div>
+              <div class="mobile-meal-nutrition-row-v2 d-flex align-items-center">
+                <div class="nutr-block-v2"><span class="nutr-val-v2">400</span><span class="nutr-label-v2">Kcal</span></div>
+                <div class="nutr-divider-v2"></div>
+                <div class="nutr-block-v2"><span class="nutr-val-v2">42g</span><span class="nutr-label-v2">Carbs</span></div>
+                <div class="nutr-divider-v2"></div>
+                <div class="nutr-block-v2"><span class="nutr-val-v2">46g</span><span class="nutr-label-v2">Protein</span></div>
+                <div class="nutr-divider-v2"></div>
+                <div class="nutr-block-v2"><span class="nutr-val-v2">6g</span><span class="nutr-label-v2">Fat</span></div>
               </div>
-              <!-- Nutrition Row -->
-              <div class="d-flex justify-content-between align-items-center mb-3 px-1 v2-meal-card-nutrition-2"
-                style="gap: 0.25rem">
-                <div class="text-center" style="width: 40px">
-                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
-                    400
-                  </div>
-                  <div style="font-size: 8px; font-family: Montserrat">
-                    Kcal
-                  </div>
-                </div>
-                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
-                <div class="text-center" style="width: 40px">
-                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
-                    42g
-                  </div>
-                  <div style="font-size: 8px; font-family: Montserrat">
-                    Carbs
-                  </div>
-                </div>
-                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
-                <div class="text-center" style="width: 40px">
-                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
-                    46g
-                  </div>
-                  <div style="font-size: 8px; font-family: Montserrat">
-                    Protein
-                  </div>
-                </div>
-                <img src="./assets/Line 3.png" style="height: 30px; width: 1px" />
-                <div class="text-center" style="width: 40px">
-                  <div class="fw-bold" style="font-size: 12px; font-family: Montserrat">
-                    6g
-                  </div>
-                  <div style="font-size: 8px; font-family: Montserrat">
-                    Fat
-                  </div>
-                </div>
-              </div>
-              <!-- Price and Quantity -->
-              <div class="d-flex justify-content-between align-items-center mb-2 v2-meal-card-priceqty-2"
-                style="width: 100%; margin: auto">
-                <span class="fw-bold" style="
-                      font-size: 16px;
-                      font-family: Montserrat;
-                      margin-bottom: 20px;
-                    ">$11.50</span>
-                <div class="d-flex align-items-center gap-1" style="margin-bottom: 20px">
-                  <button class="btn btn-sm" style="
-                        background: #d9d9d9;
-                        border-radius: 50%;
-                        width: 28px;
-                        height: 28px;
-                        padding: 0;
-                      ">
-                    -
-                  </button>
-                  <span class="fw-semibold" style="font-size: 16px; font-family: Montserrat">1</span>
-                  <button class="btn btn-sm" style="
-                        background: #d9d9d9;
-                        border-radius: 50%;
-                        width: 28px;
-                        height: 28px;
-                        padding: 0;
-                      ">
-                    +
-                  </button>
-                </div>
+              <div class="mobile-meal-price-row-v2 d-flex align-items-center mt-2">
+                <div class="mobile-meal-price-v2">$11.50</div>
+                <button class="mobile-meal-add-btn-v2 ms-auto">
+                  <img src="assets/add_to_cart.png" alt="Add" style="height: 20px; margin-right: 8px;">
+                  Add
+                </button>
               </div>
             </div>
-            <!-- Add to Cart Button -->
-            <button class="w-100 fw-bold d-flex align-items-center justify-content-center v2-meal-card-btn-2" style="
-                  background: #baf700;
-                  color: #111;
-                  border-radius: 0 0 8px 8px;
-                  height: 51px;
-                  font-size: 14px;
-                  border: none;
-                  position: absolute;
-                  left: 0;
-                  bottom: 0;
-                ">
-              <img src="./assets/Group 28318.png" alt="cart" style="height: 19px; margin-right: 8px" />
-              ADD TO CART
-            </button>
           </div>
         </div>
+      </div>
+
+      <!-- Meal Card 3 -->
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+          <div class="meal-card-custom mx-auto my-4">
+              <img src="assets/food-10-1.png" class="meal-img-custom mx-auto d-block" alt="Korean Beef">
+              <div class="card-body">
+                  <div class="meal-title-custom">KOREAN BEEF</div>
+                  <div class="meal-nutrition-custom mb-3">
+                      <div><span class="nutr-val">400</span><br><span class="nutr-label">Kcal</span></div>
+                      <img src="assets/line-2.svg" class="nutrition-divider" alt="divider">
+                      <div><span class="nutr-val">42g</span><br><span class="nutr-label">Carbs</span></div>
+                      <img src="assets/line-2.svg" class="nutrition-divider" alt="divider">
+                      <div><span class="nutr-val">46g</span><br><span class="nutr-label">Protein</span></div>
+                      <img src="assets/line-2.svg" class="nutrition-divider" alt="divider">
+                      <div><span class="nutr-val">6g</span><br><span class="nutr-label">Fat</span></div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                      <span class="meal-price-custom">$11.50</span>
+                      <div class="cart-controls-custom d-flex align-items-center">
+                          <button class="cart-btn-custom">-</button>
+                          <span class="cart-qty-custom">1</span>
+                          <button class="cart-btn-custom">+</button>
+                      </div>
+                  </div>
+              </div>
+              <button class="add-to-cart-btn-custom d-flex align-items-center justify-content-center w-100">
+                  <img src="assets/add_to_cart.png" alt="cart" style="height:20px;margin-right:8px;">
+                  ADD TO CART
+              </button>
+          </div>
+      </div>
+      <!-- Meal Card 4 -->
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+          <div class="meal-card-custom mx-auto my-4">
+              <img src="assets/food-11.png" class="meal-img-custom mx-auto d-block" alt="Protein Pancake">
+              <div class="card-body">
+                  <div class="meal-title-custom">PROTEIN PANCAKE</div>
+                  <div class="meal-nutrition-custom mb-3">
+                      <div><span class="nutr-val">400</span><br><span class="nutr-label">Kcal</span></div>
+                      <img src="assets/line-2.svg" class="nutrition-divider" alt="divider">
+                      <div><span class="nutr-val">42g</span><br><span class="nutr-label">Carbs</span></div>
+                      <img src="assets/line-2.svg" class="nutrition-divider" alt="divider">
+                      <div><span class="nutr-val">46g</span><br><span class="nutr-label">Protein</span></div>
+                      <img src="assets/line-2.svg" class="nutrition-divider" alt="divider">
+                      <div><span class="nutr-val">6g</span><br><span class="nutr-label">Fat</span></div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                      <span class="meal-price-custom">$11.50</span>
+                      <div class="cart-controls-custom d-flex align-items-center">
+                          <button class="cart-btn-custom">-</button>
+                          <span class="cart-qty-custom">1</span>
+                          <button class="cart-btn-custom">+</button>
+                      </div>
+                  </div>
+              </div>
+              <button class="add-to-cart-btn-custom d-flex align-items-center justify-content-center w-100">
+                  <img src="assets/add_to_cart.png" alt="cart" style="height:20px;margin-right:8px;">
+                  ADD TO CART
+              </button>
+          </div>
+      </div>
+
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+          <div class="meal-card-custom mx-auto my-4">
+              <img src="assets/food-9-1.png" class="meal-img-custom mx-auto d-block" alt="Blackened Chicken">
+              <div class="card-body">
+                  <div class="meal-title-custom">BLACKENED CHICKEN</div>
+                  <div class="meal-nutrition-custom mb-3">
+                      <div><span class="nutr-val">400</span><span class="nutr-label">Kcal</span></div>
+                      <img src="assets/line-2.svg" class="nutrition-divider" alt="divider">
+                      <div><span class="nutr-val">42g</span><br><span class="nutr-label">Carbs</span></div>
+                      <img src="assets/line-2.svg" class="nutrition-divider" alt="divider">
+                      <div><span class="nutr-val">46g</span><br><span class="nutr-label">Protein</span></div>
+                      <img src="assets/line-2.svg" class="nutrition-divider" alt="divider">
+                      <div><span class="nutr-val">6g</span><br><span class="nutr-label">Fat</span></div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                      <span class="meal-price-custom">$11.50</span>
+                      <div class="cart-controls-custom d-flex align-items-center">
+                          <button class="cart-btn-custom">-</button>
+                          <span class="cart-qty-custom">1</span>
+                          <button class="cart-btn-custom">+</button>
+                      </div>
+                  </div>
+              </div>
+              <button class="add-to-cart-btn-custom d-flex align-items-center justify-content-center w-100">
+                  <img src="assets/add_to_cart.png" alt="cart" style="height:20px;margin-right:8px;">
+                  ADD TO CART
+              </button>
+          </div>
+      </div>
+      <!-- Meal Card 2 -->
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+          <div class="meal-card-custom mx-auto my-4">
+              <img src="assets/food-10.png" class="meal-img-custom mx-auto d-block" alt="Chicken Parmigiana">
+              <div class="card-body">
+                  <div class="meal-title-custom">CHICKEN PARMIGIANA</div>
+                  <div class="meal-nutrition-custom mb-3">
+                      <div><span class="nutr-val">400</span><br><span class="nutr-label">Kcal</span></div>
+                      <img src="assets/line-2.svg" class="nutrition-divider" alt="divider">
+                      <div><span class="nutr-val">42g</span><br><span class="nutr-label">Carbs</span></div>
+                      <img src="assets/line-2.svg" class="nutrition-divider" alt="divider">
+                      <div><span class="nutr-val">46g</span><br><span class="nutr-label">Protein</span></div>
+                      <img src="assets/line-2.svg" class="nutrition-divider" alt="divider">
+                      <div><span class="nutr-val">6g</span><br><span class="nutr-label">Fat</span></div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                      <span class="meal-price-custom">$70.00</span>
+                      <div class="cart-controls-custom d-flex align-items-center">
+                          <button class="cart-btn-custom">-</button>
+                          <span class="cart-qty-custom">1</span>
+                          <button class="cart-btn-custom">+</button>
+                      </div>
+                  </div>
+              </div>
+              <button class="add-to-cart-btn-custom d-flex align-items-center justify-content-center w-100">
+                  <img src="assets/group-14.png" alt="cart" style="height:20px;margin-right:8px;">
+                  ADD TO CART
+              </button>
+          </div>
       </div>
     </div>
 
     <!-- View All Meals Button -->
-    <div class="text-center mt-5 mb-2">
+    <div class="text-center mt-lg-5 mb-2">
       <button class="btn btn-dark btn-lg px-5 py-3 fw-bold" style="
             background: #111;
             color: #baf700;
@@ -915,7 +671,7 @@
     </div>
   </section>
   <!-- Fourth Component -->
-  <div class="container-fluid py-5 px-5 my-5">
+  <div class="container-fluid py-lg-5 px-5 my-lg-5 px-sm-5 my-sm-5 mb-5 mb-sm-3">
     <div class="text-center mb-5">
       <div class="mb-2" style="
             font-size: 20px;
@@ -955,9 +711,9 @@
     </div>
   </div>
   <!-- Fifth Component -->
-  <section class="how-it-works-section py-5">
+  <section class="how-it-works-section py-5 px-lg-0 mt-lg-0 mt-sm-5">
     <div class="how-it-works-left">
-      <div class="how-it-works-overlay">
+      <div class="how-it-works-overlay how-it-works-mobile-ps2">
         <!-- Subtitle -->
         <div class="mb-2 how-it-works-desc">
           Easy. Nutritious. Convenient. Delicious.
@@ -1053,10 +809,10 @@
     </div>
   </section>
   <!-- Sixth Component -->
-  <section class="healthy-meals-section py-5">
-    <div class="container-fluid px-2 py-5">
-      <div class="row justify-content-center">
-        <div class="col-12 col-xxl-11">
+  <section class="healthy-meals-section py-lg-5">
+    <div class="container-fluid py-5">
+      <div class="row justify-content-center healthy-meals-mobile-margin">
+        <div class="col-12 col-xxl-11 text-center">
           <!-- Main Title -->
           <div class="text-center mb-5">
             <h1 class="section-title">GET YOUR HEALTHY MEALS</h1>
@@ -1152,7 +908,8 @@
     </div>
     <!-- Right: Overlay Card -->
     <div class="v2-right-panel-custom-8 d-flex flex-column justify-content-center px-4 py-5">
-      <h2 class="fw-bold mb-3 mt-5 py-2" style="
+      <div class="v2-right-panel-custom-8-inner">
+        <h2 class="fw-bold mb-3 mt-5 py-2" style="
             color: #111;
             font-family: Montserrat, sans-serif;
             font-size: 2rem;
@@ -1180,6 +937,7 @@
               font-family: Montserrat;
               font-weight: 600;
             ">*ORDER BY FRIDAY, 9AM</span>
+      </div>
       </div>
     </div>
   </div>

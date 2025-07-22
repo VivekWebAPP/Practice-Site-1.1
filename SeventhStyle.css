@@ -240,20 +240,17 @@
 /* Mobile Portrait (320px - 479px) */
 @media (max-width: 479px) {
   .v2-frame-7 {
-      height: 50px !important;         /* Set total height to 50px */
-      padding-top: 0;
-      padding-bottom: 0;
-      padding-left: 15px;
-      padding-right: 15px;
+      height: auto !important;
+      min-height: 120px;
       display: flex;
-      align-items: center;             /* Vertically center content */
+      align-items: center;
+      box-sizing: border-box;
   }
   .v2-frame-7 .v2-div-7 {
       flex-direction: row !important;
       flex-wrap: nowrap !important;
       gap: 3px;
       width: 100%;
-      overflow-x: auto; /* Allow horizontal scroll if needed */
   }
   .v2-frame-7 .v2-group-7,
   .v2-frame-7 .v2-group-2-7 {
@@ -273,7 +270,7 @@
   }
   .v2-frame-7 .v2-TRUSTED-SUPPLIERS-7,
   .v2-frame-7 .v2-TASTY-NUTRITIOUS-7 {
-      font-size: 10px;   /* Increase from 8px to 10px for better readability */
+      font-size: 2px;   /* Increase from 8px to 10px for better readability */
       left: 25px;
       top: 4px;
       /* Remove overflow, text-overflow, white-space, max-width, display, vertical-align */
@@ -285,7 +282,7 @@
       flex-shrink: 1;
   }
   .v2-frame-7 .v2-NO-ADDED-7 {
-      font-size: 10px;   /* Increase from 8px to 10px for better readability */
+      font-size: 2px;   /* Increase from 8px to 10px for better readability */
       /* Remove overflow, text-overflow, white-space, max-width, display, vertical-align */
   }
 }
@@ -319,7 +316,7 @@
   .v2-frame-7 .v2-TRUSTED-SUPPLIERS-7,
   .v2-frame-7 .v2-TASTY-NUTRITIOUS-7 {
       position: static;
-      font-size: 14px;
+      font-size: 10px;
       text-align: center;
       line-height: 1.4;
   }
@@ -344,7 +341,7 @@
   }
 
   .v2-frame-7 .v2-NO-ADDED-7 {
-      font-size: 14px;
+      font-size: 10px;
       line-height: 1.4;
       text-align: center;
   }

@@ -83,6 +83,7 @@
     height: 50px;
   }
   .icon-label {
+    width: 50% !important;
     font-size: 10px;
     min-height: 20px;
   }
