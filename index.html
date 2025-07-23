@@ -877,25 +877,19 @@
   </section>
   <!-- Seventh Component -->
   <section>
-    <div class="v2-frame-7">
-      <div class="v2-div-7">
-        <div class="v2-group-7">
-          <div class="v2-harvest-7"></div>
-          <div class="v2-TRUSTED-SUPPLIERS-7" style="font-family: Montserrat">
-            TRUSTED<br />SUPPLIERS
-          </div>
+    <div class="v2-frame-3">
+      <div class="v2-div-3">
+        <div class="v2-group-3">
+          <div class="v2-TRUSTED-SUPPLIERS-3">TRUSTED<br />SUPPLIERS</div>
+          <div class="v2-harvest-3 mt-1"></div>
         </div>
-        <div class="v2-group-2-7">
-          <div class="v2-rice-7"></div>
-          <div class="v2-TASTY-NUTRITIOUS-7" style="font-family: Montserrat">
-            TASTY &amp;<br />NUTRITIOUS
-          </div>
+        <div class="v2-group-2-3">
+          <div class="v2-TASTY-NUTRITIOUS-3">TASTY &amp;<br />NUTRITIOUS</div>
+          <div class="v2-rice-3 mt-1"></div>
         </div>
-        <div class="v2-div-2-7">
-          <div class="v2-no-preservatives-7"></div>
-          <div class="v2-NO-ADDED-7" style="font-family: Montserrat">
-            NO ADDED<br />PRESERVATIVES
-          </div>
+        <div class="v2-div-2-3 mt-lg-3">
+          <div class="v2-no-preservatives-3"></div>
+          <div class="v2-NO-ADDED-3">NO ADDED<br />PRESERVATIVES</div>
         </div>
       </div>
     </div>
@@ -1301,7 +1295,7 @@
     const totalSlides = 6; // Total number of cards
     const slideWidth = 456; // 424px width + 32px gap
     const slidesToShow = 3; // Number of cards to show at once
-    const maxSlidePosition = Math.ceil(totalSlides / slidesToShow) - 1; // 2 positions (0 and 1)
+    const maxSlidePosition = totalSlides - slidesToShow; // Now, max position is last visible slide index
 
     const testimonialsContainer = document.getElementById("testimonialsContainer");
     const nextBtn = document.getElementById("nextBtn");
@@ -1309,22 +1303,31 @@
     const dots = document.getElementById("dots").children;
 
     function updateSlide() {
-      const translateX = -currentSlide * slideWidth * slidesToShow;
+      // Only slide one at a time
+      const translateX = -currentSlide * slideWidth;
       testimonialsContainer.style.transform = `translateX(${translateX}px)`;
 
-      // Update dots
+      // Update dots (show active for the first visible slide)
       for (let i = 0; i < dots.length; i++) {
         dots[i].className = i === currentSlide ? "v2-ellipse-2-9" : "v2-ellipse-9";
       }
     }
 
     function nextSlide() {
-      currentSlide = (currentSlide + 1) % (maxSlidePosition + 1);
+      if (currentSlide < maxSlidePosition) {
+        currentSlide++;
+      } else {
+        currentSlide = 0;
+      }
       updateSlide();
     }
 
     function prevSlide() {
-      currentSlide = (currentSlide - 1 + maxSlidePosition + 1) % (maxSlidePosition + 1);
+      if (currentSlide > 0) {
+        currentSlide--;
+      } else {
+        currentSlide = maxSlidePosition;
+      }
       updateSlide();
     }
 
@@ -1335,8 +1338,10 @@
     // Add click handlers for dots
     for (let i = 0; i < dots.length; i++) {
       dots[i].addEventListener("click", function () {
-        currentSlide = i;
-        updateSlide();
+        if (i <= maxSlidePosition) {
+          currentSlide = i;
+          updateSlide();
+        }
       });
       dots[i].style.cursor = "pointer";
     }
